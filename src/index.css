@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-fade-dark: #03140c;
+    --bg-fade-mid: #08291b;
+    --bg-fade-card: #0b3423;
+    --gold-primary: #d4af37;
+    --gold-light: #f5e4a8;
+    --gold-dark: #9e7d23;
+    --gold-accent: #f0cb69;
+  }
+
+  body {
+    background-color: #04160d;
+    color: #f1f5f3;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-cinzel {
+    font-family: 'Cinzel', Georgia, serif;
+    letter-spacing: 0.03em;
+  }
+}
+
+/* Luxury Gold & Emerald Effects */
+.bg-fade-green {
+  background: linear-gradient(180deg, #04170e 0%, #08281b 45%, #051b11 100%);
+}
+
+.bg-fade-green-radial {
+  background: radial-gradient(circle at 50% 20%, #0d3d28 0%, #072418 50%, #020f09 100%);
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #fcedc2 0%, #d4af37 40%, #a8811e 80%, #fcedc2 100%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fff2cc 0%, #d4af37 35%, #f6deb0 70%, #aa8422 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-subtle {
+  color: #dfc17b;
+}
+
+.border-gold-subtle {
+  border-color: rgba(212, 175, 55, 0.28);
+}
+
+.border-gold-glow {
+  border-color: rgba(212, 175, 55, 0.55);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+.shadow-gold {
+  box-shadow: 0 4px 20px -2px rgba(212, 175, 55, 0.25);
+}
+
+.shadow-gold-lg {
+  box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.35);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #03140c;
+}
+::-webkit-scrollbar-thumb {
+  background: #0d3d28;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
