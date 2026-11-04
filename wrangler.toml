@@ -1,0 +1,6 @@
+name = "dovaan-resort"
+compatibility_date = "2026-11-04"
+pages_build_output_dir = "./dist"
+
+[site]
+bucket = "./dist"
