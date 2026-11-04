@@ -44,8 +44,16 @@ To deploy directly from your local terminal using Cloudflare's official Wrangler
 
 ## Pre-Configured Files Included in this Project
 
-- **`wrangler.toml`**: Defines project name `dovaan-resort`, build output `dist`, and compatibility date.
 - **`public/_redirects`**: Configures SPA client-side fallback (`/* /index.html 200`) so refreshing subpaths or opening modal routes works seamlessly without 404s.
 - **`public/_headers`**: Enforces best-practice security headers (`X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`) and sets 1-year immutable caching for static assets in `/assets/*`.
 - **`.nvmrc` & `.node-version`**: Pins the Node.js version to 20 for Cloudflare's build runners.
 - **`vercel.json`**: Retained so the project can deploy simultaneously to both Cloudflare and Vercel.
+
+---
+
+## Important: Cloudflare Pages vs Cloudflare Workers
+- This is a frontend React SPA. It must be created under **Cloudflare Pages** (NOT Cloudflare Workers).
+- In the Cloudflare Dashboard, always choose **Workers & Pages** > **Create application** > **Pages** tab.
+- **Build command**: `npm run build`
+- **Build output directory**: `dist`
+- If using CLI, always use `wrangler pages deploy dist` (not `wrangler deploy`).
