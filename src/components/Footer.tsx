@@ -8,7 +8,7 @@ import {
   Facebook,
   Youtube,
   Search,
-  Database,
+  LogIn,
   ArrowUp,
   Waves,
 } from 'lucide-react';
@@ -169,8 +169,8 @@ export const Footer: React.FC<FooterProps> = ({
                   onClick={onOpenAdmin}
                   className="hover:text-[#fcedc2] hover:underline transition-colors cursor-pointer flex items-center gap-1.5"
                 >
-                  <Database className="w-3.5 h-3.5 text-[#d4af37]" />
-                  <span>Resort Database Portal</span>
+                  <LogIn className="w-3.5 h-3.5 text-[#d4af37]" />
+                  <span>Staff Sign In</span>
                 </button>
               </li>
               <li>
@@ -254,7 +254,7 @@ export const Footer: React.FC<FooterProps> = ({
               onClick={onOpenAdmin}
               className="text-[#d6c28f] hover:text-[#fcedc2] transition-colors cursor-pointer"
             >
-              Database Console
+              Staff Login
             </button>
             <span>·</span>
             <button

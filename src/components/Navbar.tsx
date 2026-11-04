@@ -7,7 +7,7 @@ import {
   Waves,
   Sparkles,
   Search,
-  Database,
+  LogIn,
   Menu,
   X,
   Phone,
@@ -77,10 +77,10 @@ export const Navbar: React.FC<NavbarProps> = ({
             <button
               onClick={onOpenAdmin}
               className="inline-flex items-center gap-1 hover:text-[#fcedc2] text-[#fcedc2] transition-colors cursor-pointer"
-              title="Resort Database Console"
+              title="Staff & Management Login"
             >
-              <Database className="w-3 h-3 text-[#d4af37]" />
-              <span className="font-medium">Database</span>
+              <LogIn className="w-3 h-3 text-[#d4af37]" />
+              <span className="font-medium">Sign In</span>
             </button>
           </div>
         </div>
@@ -141,10 +141,10 @@ export const Navbar: React.FC<NavbarProps> = ({
             <button
               onClick={onOpenAdmin}
               className="bg-[#0b3323] border border-[#d4af37]/60 text-[#fcedc2] hover:border-[#d4af37] hover:bg-[#0f442e] font-medium text-xs xl:text-sm px-3.5 py-2.5 rounded-md transition-all flex items-center gap-1.5 cursor-pointer"
-              title="Open Database with Login ID & Password"
+              title="Staff & Management Sign In"
             >
-              <Database className="w-4 h-4 text-[#d4af37]" />
-              <span>Database</span>
+              <LogIn className="w-4 h-4 text-[#d4af37]" />
+              <span>Sign In</span>
             </button>
             <button
               onClick={onOpenBooking}
@@ -211,8 +211,8 @@ export const Navbar: React.FC<NavbarProps> = ({
               }}
               className="w-full py-2.5 px-3 text-left text-sm text-[#fcedc2] bg-[#08291b] rounded flex items-center gap-2"
             >
-              <Database className="w-4 h-4 text-[#d4af37]" />
-              <span>Resort Database &amp; Booking Management</span>
+              <LogIn className="w-4 h-4 text-[#d4af37]" />
+              <span>Staff Login &amp; Management</span>
             </button>
           </div>
         </div>

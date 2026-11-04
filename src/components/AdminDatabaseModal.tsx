@@ -250,7 +250,7 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
       setCurrentStaff(authenticated);
       loadData();
     } else {
-      setLoginError('Invalid Database Login ID or Password. Please check credentials or use 1-Click Fill below.');
+      setLoginError('Invalid Login ID or Password. Please check credentials or use 1-Click Fill below.');
     }
   };
 
@@ -278,7 +278,7 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
     DovaanDatabase.deleteBooking(id);
     setConfirmDeleteBookingId(null);
     loadData();
-    setActionNotification(`Booking ${id} deleted from database.`);
+    setActionNotification(`Booking ${id} deleted.`);
     setTimeout(() => setActionNotification(null), 3500);
     if (onRefreshTrigger) onRefreshTrigger();
   };
@@ -313,7 +313,7 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
     DovaanDatabase.resetToSeedData();
     setConfirmResetDemo(false);
     loadData();
-    setActionNotification('Database restored to default demo records.');
+    setActionNotification('System restored to default demo records.');
     setTimeout(() => setActionNotification(null), 3500);
     if (onRefreshTrigger) onRefreshTrigger();
   };
@@ -445,10 +445,10 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
             </div>
 
             <h3 className="font-cinzel text-2xl font-bold text-white mb-2">
-              Dovaan Database Login
+              Staff &amp; Admin Sign In
             </h3>
             <p className="text-xs text-[#cad5cf] mb-5">
-              Enter your Login ID and Password to manage room bookings, guests, and database records.
+              Enter your Login ID and Password to manage room bookings, guests, and resort records.
             </p>
 
             {loginError && (
@@ -503,7 +503,7 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
                 className="w-full bg-gold-gradient text-[#04160d] font-bold text-xs sm:text-sm py-3 rounded-xl shadow-gold hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2 cursor-pointer mt-3"
               >
                 <ShieldCheck className="w-4 h-4 text-[#04160d]" />
-                <span>Sign In to Database</span>
+                <span>Sign In / Login</span>
               </button>
             </form>
 
@@ -528,7 +528,7 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
                 <div>
                   <div className="flex items-center gap-2">
                     <h3 className="font-cinzel text-lg sm:text-xl font-bold text-white">
-                      Dovaan Resort Database Console
+                      Dovaan Resort Management Console
                     </h3>
                     <span className="bg-[#0b3323] border border-[#d4af37]/40 text-[#fcedc2] text-[10px] px-2 py-0.5 rounded font-mono">
                       AUTHENTICATED
@@ -559,7 +559,7 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
                 <button
                   onClick={handleExportJSON}
                   className="px-3 py-1.5 rounded-lg bg-[#051c11] border border-[#d4af37]/40 text-[#fcedc2] hover:border-[#d4af37] text-xs font-medium flex items-center gap-1.5 cursor-pointer"
-                  title="Export full JSON database"
+                  title="Export full JSON records"
                 >
                   <Download className="w-3.5 h-3.5 text-[#d4af37]" />
                   <span className="hidden sm:inline">JSON</span>
@@ -595,7 +595,7 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
                 <button
                   onClick={handleLogout}
                   className="px-3 py-1.5 rounded-lg bg-red-950/60 border border-red-500/40 text-red-200 hover:bg-red-900/60 text-xs font-medium flex items-center gap-1.5 cursor-pointer ml-1"
-                  title="Log out of database"
+                  title="Log out of console"
                 >
                   <LogOut className="w-3.5 h-3.5" />
                   <span>Logout</span>
@@ -639,7 +639,7 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
               </div>
 
               <div className="p-3 bg-[#051c11] rounded-xl border border-[#d4af37]/20">
-                <span className="text-[#8ea89a] block text-[11px]">Total Database Revenue</span>
+                <span className="text-[#8ea89a] block text-[11px]">Total Confirmed Revenue</span>
                 <span className="font-cinzel text-xl font-bold text-gold-gradient">
                   ₹{stats.totalRevenue.toLocaleString('en-IN')}
                 </span>
@@ -1652,7 +1652,7 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
                       ) : (
                         <tr>
                           <td colSpan={7} className="py-8 text-center text-[#cad5cf]">
-                            No records match your filter criteria in the database.
+                            No records match your filter criteria.
                           </td>
                         </tr>
                       )}
@@ -1748,9 +1748,9 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
                 <div className="overflow-x-auto">
                   <div className="mb-4 p-3 bg-[#03140c] rounded-xl border border-[#d4af37]/30 text-xs flex items-center justify-between">
                     <div>
-                      <span className="font-semibold text-[#fcedc2] block">Database Access Credentials Directory</span>
+                      <span className="font-semibold text-[#fcedc2] block">Staff Login Credentials Directory</span>
                       <span className="text-[11px] text-[#8ea89a]">
-                        These authorized credentials allow staff to log into the Dovaan Database Console.
+                        These authorized credentials allow staff to log into the Dovaan Management Console.
                       </span>
                     </div>
                   </div>

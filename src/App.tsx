@@ -22,7 +22,7 @@ import { AdminDatabaseModal } from './components/AdminDatabaseModal';
 import {
   Calendar,
   Search,
-  Database,
+  LogIn,
   Phone,
   Sparkles,
   CheckCircle,
@@ -58,7 +58,7 @@ export default function App() {
   };
 
   const handleBookingCreated = (booking: Booking) => {
-    setNotification(`Reservation ${booking.id} created and stored in Dovaan Database!`);
+    setNotification(`Reservation ${booking.id} created and confirmed successfully!`);
     setTimeout(() => {
       setNotification(null);
     }, 6000);
@@ -185,10 +185,10 @@ export default function App() {
         <button
           onClick={() => setIsAdminOpen(true)}
           className="bg-[#03140c] border border-[#d4af37]/60 text-[#fcedc2] hover:border-[#d4af37] px-3.5 py-2 rounded-full text-xs font-semibold shadow-2xl flex items-center gap-2 cursor-pointer transition-all hover:scale-105"
-          title="Open Resort Database Console"
+          title="Staff & Management Sign In"
         >
-          <Database className="w-4 h-4 text-[#d4af37]" />
-          <span className="hidden sm:inline">Database Console</span>
+          <LogIn className="w-4 h-4 text-[#d4af37]" />
+          <span className="hidden sm:inline">Sign In / Login</span>
         </button>
 
         <button

@@ -231,7 +231,7 @@ export const EXPERIENCES: Experience[] = [
     timing: 'Sunset Session (05:00 PM) & Starlight Session (07:30 PM)',
     minAge: 10,
     safetyBrief: 'Engineered hydraulic lifting platform with individual 5-point aeronautical seatbelts.',
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80',
+    image: '/assets/experiences/sky_dining_candlelight.jpg',
     included: ['5-Course Gourmet Tasting Menu', 'Welcome Sparkling Drink', 'Live Acoustic Violinist', 'Commemorative Glassware'],
   },
   {

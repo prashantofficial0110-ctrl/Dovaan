@@ -204,7 +204,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
             </div>
             <div>
               <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#d4af37] font-semibold block">
-                Direct Database Booking System
+                Direct Online Booking System
               </span>
               <h3 className="font-cinzel text-lg sm:text-2xl font-bold text-white">
                 Reserve Your Experience at DOVAAN
@@ -481,7 +481,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   Guest Information &amp; Preferences
                 </h4>
                 <p className="text-xs text-[#cad9d1]">
-                  Your booking record will be permanently saved into the Dovaan Database and accessible anytime.
+                  Your booking record will be securely confirmed and accessible anytime.
                 </p>
               </div>
 
@@ -584,7 +584,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 className="w-full bg-gold-gradient text-[#04160d] font-bold text-sm py-3.5 rounded-lg shadow-gold hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 <ShieldCheck className="w-4 h-4" />
-                <span>Confirm &amp; Record in Dovaan Database</span>
+                <span>Confirm &amp; Complete Reservation</span>
               </button>
             </form>
           )}
@@ -597,7 +597,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   <CheckCircle className="w-8 h-8" />
                 </div>
                 <h3 className="font-cinzel text-2xl font-bold text-[#fcedc2]">
-                  Booking Confirmed &amp; Logged in Database!
+                  Booking Confirmed Successfully!
                 </h3>
                 <p className="text-xs sm:text-sm text-[#cad9d1] mt-1">
                   We look forward to welcoming you to the sacred confluence of two rivers in Sikkim.
@@ -621,14 +621,14 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                       <div className="font-cinzel text-lg font-bold text-gold-gradient">
                         DOVAAN RESORT · SIKKIM
                       </div>
-                      <div className="text-[10px] text-[#cad5cf] uppercase tracking-wider">
+                      <div className="text-[10px] text-[#cadcf1] uppercase tracking-wider">
                         Official Guest Reservation Voucher
                       </div>
                     </div>
                   </div>
 
                   <div className="text-right">
-                    <div className="text-[10px] text-[#8ea89a]">Database Reference ID</div>
+                    <div className="text-[10px] text-[#8ea89a]">Booking Reference ID</div>
                     <div className="font-mono text-base sm:text-lg font-bold text-[#fcedc2] tracking-wider">
                       {confirmedBooking.id}
                     </div>
@@ -683,7 +683,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   <div>
                     <span className="text-[#8ea89a] block">Reservation Status</span>
                     <span className="font-medium text-[#fcedc2]">
-                      Confirmed in Database (Pay at Check-In)
+                      Confirmed Reservation (Pay at Check-In)
                     </span>
                   </div>
                   <div className="text-right">

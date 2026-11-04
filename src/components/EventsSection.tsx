@@ -89,8 +89,8 @@ export const EventsSection: React.FC = () => {
             <div>
               <div className="relative h-56 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80"
-                  alt="Grand Banquet Hall"
+                  src="/assets/experiences/sky_dining_candlelight.jpg"
+                  alt="Dovaan Elegant Banquet Hall"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#062117] via-transparent to-transparent" />
@@ -171,7 +171,7 @@ export const EventsSection: React.FC = () => {
                 <CheckCircle className="w-8 h-8" />
               </div>
               <h4 className="font-cinzel text-2xl font-bold text-[#fcedc2]">
-                Inquiry Logged into Database!
+                Inquiry Submitted Successfully!
               </h4>
               <p className="text-sm text-[#cad9d1] max-w-md mx-auto">
                 Thank you, <strong className="text-white">{formData.fullName}</strong>. Your event proposal has been assigned reference ID <span className="font-mono text-[#d4af37] font-bold">{submittedInquiryId}</span>. Our banquet concierge will contact you at {formData.phone}.
@@ -307,7 +307,7 @@ export const EventsSection: React.FC = () => {
                 className="w-full bg-gold-gradient text-[#04160d] font-bold text-sm py-3.5 rounded-lg shadow-gold hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 <Send className="w-4 h-4" />
-                <span>Submit Venue Inquiry to Database</span>
+                <span>Submit Venue Inquiry</span>
               </button>
             </form>
           )}
