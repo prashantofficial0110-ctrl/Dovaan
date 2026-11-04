@@ -1533,7 +1533,6 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
                     <option value="room-tower-deluxe">Confluence Tower Suite</option>
                     <option value="room-tower-family">Grand Tower Duplex Penthouse</option>
                     <option value="room-luxury-cottage">Heritage River Cottage</option>
-                    <option value="room-riverview-cottage-deluxe">Emerald Valley Cottage</option>
                   </select>
                 </div>
                 <div>

@@ -8,51 +8,12 @@ import {
   Clock,
   Car,
   Plane,
-  Camera,
   ExternalLink,
   ShieldCheck,
   CheckCircle,
 } from 'lucide-react';
 
 export const LocationMapSection: React.FC = () => {
-  const resortPhotos = [
-    {
-      title: 'DOVAAN Resort & Tower Panorama at Adampool',
-      subtitle: 'Official property photo featuring our signature tower and mountain retreat',
-      url: '/assets/aistudio/IMG-20261101-WA0011_92ba4db1.jpg',
-    },
-    {
-      title: 'Dovaan Resort River Confluence at Adampool',
-      subtitle: 'Where mountain currents merge beside the lush pine ridges',
-      url: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      title: 'Wooden Tower Suite with River Balcony',
-      subtitle: 'Panoramic balcony facing the flowing waters of Adampool',
-      url: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      title: 'The Legendary Sikkim Swing in Action',
-      subtitle: 'High-canyon flight over the river gorge at Ranipool',
-      url: 'https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      title: 'Suspended Sky Dining Over the Gorge',
-      subtitle: 'Open-air gastronomic table suspended between the mountains',
-      url: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      title: 'Authentic Sikkim River Trout Delicacy',
-      subtitle: 'Fresh catch cooked with mountain herbs at the multi-cuisine restaurant',
-      url: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      title: 'Night Starlight Campfire & BBQ Gathering',
-      subtitle: 'Evening bonfire & karaoke by the murmuring Rani Khola stream',
-      url: 'https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80',
-    },
-  ];
-
   return (
     <section className="py-16 sm:py-24 bg-[#03130b] relative overflow-hidden border-b border-[#d4af37]/25">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -269,50 +230,6 @@ export const LocationMapSection: React.FC = () => {
                 <span className="text-[10px] text-[#8ea89a]">Direct NH10 corridor route</span>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Real Photo Gallery of Dovaan Adampool */}
-        <div>
-          <div className="flex items-center justify-between mb-8">
-            <div>
-              <div className="inline-flex items-center gap-1.5 text-xs text-[#d4af37] font-semibold tracking-wider uppercase">
-                <Camera className="w-3.5 h-3.5" />
-                <span>Visual Tour</span>
-              </div>
-              <h3 className="font-cinzel text-2xl sm:text-3xl font-bold text-white mt-1">
-                Adampool Property Photos &amp; Experiences
-              </h3>
-            </div>
-            <span className="text-xs text-[#cad5cf] hidden sm:block">
-              River view cottages, Sikkim swing &amp; sky dining
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {resortPhotos.map((photo, idx) => (
-              <div
-                key={idx}
-                className="group relative rounded-2xl overflow-hidden border border-[#d4af37]/30 bg-[#062117] shadow-xl hover:border-[#d4af37] transition-all hover:-translate-y-1"
-              >
-                <div className="h-60 overflow-hidden relative">
-                  <img
-                    src={photo.url}
-                    alt={photo.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#04160d] via-transparent to-black/30" />
-                </div>
-                <div className="p-4 bg-[#062117]">
-                  <h4 className="font-cinzel text-sm sm:text-base font-bold text-white group-hover:text-[#fcedc2] transition-colors">
-                    {photo.title}
-                  </h4>
-                  <p className="text-xs text-[#cad5cf] mt-1">
-                    {photo.subtitle}
-                  </p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </div>

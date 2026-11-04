@@ -10,6 +10,8 @@ import {
   Waves,
   ShieldCheck,
   ChevronRight,
+  Maximize2,
+  X,
 } from 'lucide-react';
 
 interface HeroSectionProps {
@@ -28,6 +30,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, setActi
   const [checkOut, setCheckOut] = useState('2026-11-15');
   const [experienceType, setExperienceType] = useState<'stay' | 'adventure' | 'skydining'>('stay');
   const [guests, setGuests] = useState(2);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
   const handleQuickBook = (e: React.FormEvent) => {
     e.preventDefault();
@@ -93,6 +96,46 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, setActi
             <span className="inline-flex items-center gap-1.5 bg-[#0b3323]/80 border border-[#d4af37]/30 px-3 py-1 rounded-full">
               <Sparkles className="w-3.5 h-3.5 text-[#d4af37]" /> Suspended Sky Dining
             </span>
+          </div>
+        </div>
+
+        {/* Featured Hero Resort Photo Showcase */}
+        <div className="max-w-5xl mx-auto mb-10 sm:mb-12">
+          <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-[#d4af37]/50 shadow-[0_15px_60px_rgba(0,0,0,0.85)] group bg-[#021009]">
+            <div className="relative aspect-[16/10] sm:aspect-[21/9] max-h-[460px] w-full overflow-hidden">
+              <img
+                src="/assets/hero/hero_top_banner.jpg"
+                alt="Dovaan Homestay & Resort - Authentic Evening View of Tower, Pool and Riverside Terraces"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 cursor-pointer"
+                onClick={() => setIsLightboxOpen(true)}
+              />
+              {/* Subtle vignette for contrast */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#021009] via-transparent to-black/20 pointer-events-none" />
+
+              {/* Bottom Caption & Expand Action */}
+              <div className="absolute bottom-3 left-4 right-4 sm:bottom-4 sm:left-6 sm:right-6 flex items-end justify-between gap-3">
+                <div>
+                  <span className="text-[10px] sm:text-xs text-[#d4af37] font-semibold uppercase tracking-wider block">
+                    Authentic Property View
+                  </span>
+                  <h3 className="font-cinzel text-sm sm:text-lg font-bold text-white drop-shadow">
+                    Dovaan Resort at the Two Rivers Confluence
+                  </h3>
+                  <p className="text-xs text-[#cad5cf] hidden sm:block mt-0.5">
+                    Illuminated multi-story tower, swimming pool, riverside dining decks &amp; covered bridge over the rapids.
+                  </p>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => setIsLightboxOpen(true)}
+                  className="bg-[#021009]/85 hover:bg-[#021009] text-[#fceec5] border border-[#d4af37]/60 hover:border-[#d4af37] text-xs px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-1.5 backdrop-blur-md transition-all cursor-pointer shrink-0"
+                >
+                  <Maximize2 className="w-3.5 h-3.5 text-[#d4af37]" />
+                  <span className="hidden sm:inline">View Full Photo</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -247,6 +290,31 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, setActi
           </div>
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      {isLightboxOpen && (
+        <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4">
+          <div className="relative max-w-6xl w-full max-h-[92vh] flex flex-col items-center">
+            <button
+              onClick={() => setIsLightboxOpen(false)}
+              className="absolute -top-12 right-0 sm:top-3 sm:right-3 z-10 bg-[#021008]/90 hover:bg-[#021008] border border-[#d4af37] text-white p-2 rounded-full cursor-pointer transition-colors shadow-lg"
+              title="Close Fullscreen View"
+            >
+              <X className="w-5 h-5 text-[#d4af37]" />
+            </button>
+            <div className="w-full overflow-hidden rounded-2xl border-2 border-[#d4af37]/60 shadow-[0_0_50px_rgba(212,175,55,0.4)]">
+              <img
+                src="/assets/hero/hero_top_banner.jpg"
+                alt="Dovaan Homestay & Resort - Full Resolution Night View"
+                className="w-full max-h-[80vh] object-contain bg-black"
+              />
+            </div>
+            <div className="mt-3 text-center text-xs sm:text-sm text-[#fcedc2]">
+              <span className="font-semibold text-white">Dovaan Homestay &amp; Resort, Sikkim</span> — Authentic evening panorama featuring the tower, pool, dining terraces, and river confluence.
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

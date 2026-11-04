@@ -1,6 +1,6 @@
 {
   "name": "Dovaan Homestay & Resort - Sikkim",
-  "description": "Where nature, luxury, and adventure meet at the confluence of two rivers in Sikkim. Featuring tower rooms, river-view cottages, Sikkim Swing, sky dining, water park, and bespoke booking system.",
+  "description": "Where nature, luxury, and adventure meet at the confluence of two rivers in Sikkim. Featuring tower rooms, heritage river cottage, Sikkim Swing, sky dining, and bespoke booking system.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

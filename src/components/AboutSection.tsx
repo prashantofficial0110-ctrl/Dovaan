@@ -38,11 +38,27 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onExploreServices, o
   // Photos for The Sacred Confluence gallery
   const photos: ConfluencePhoto[] = [
     {
+      id: 'dovaan-night-panorama',
+      title: 'DOVAAN Resort Illuminated Evening Panorama',
+      subtitle: 'Authentic night view of the riverside architectural tower, swimming pool, illuminated gazebo, dining decks, and covered bridge over the rapids',
+      url: '/assets/hero/hero_top_banner.jpg',
+      badge: 'Official Night Panorama',
+      isOfficial: true,
+    },
+    {
       id: 'dovaan-official-resort',
       title: 'DOVAAN Resort & Tower at the Confluence',
       subtitle: 'Official property photo featuring our multi-story tower, riverside views, and alpine greenery in Adampool',
       url: '/assets/aistudio/IMG-20261101-WA0011_92ba4db1.jpg',
       badge: 'Official Resort Photo',
+      isOfficial: true,
+    },
+    {
+      id: 'dovaan-balcony-river-suite',
+      title: 'Balcony & River View Suite',
+      subtitle: 'Authentic guest suite featuring warm wooden architecture and panoramic windows overlooking the confluence valley',
+      url: '/assets/rooms/balcony_river_suite.jpg',
+      badge: 'Balcony & River Suite',
       isOfficial: true,
     },
   ];
