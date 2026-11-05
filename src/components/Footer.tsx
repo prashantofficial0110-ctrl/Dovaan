@@ -39,26 +39,29 @@ export const Footer: React.FC<FooterProps> = ({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-14 h-14 rounded-xl overflow-hidden border border-[#d4af37]/60 bg-[#03140c] p-0.5 shadow-gold shrink-0">
+            <div className="flex items-center gap-3.5">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border border-[#d4af37]/60 bg-[#020e08] p-1.5 shadow-gold shrink-0">
                 <img
-                  src="/assets/aistudio/IMG-20261101-WA0003_6ab79521.jpg"
-                  alt="Dovaan Resort Logo"
-                  className="w-full h-full object-cover"
+                  src="/assets/logo/dovaan_logo.jpg"
+                  alt="Dovvan Restaurant &amp; Homestay &amp; Resort - New Experience"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div>
-                <span className="font-cinzel text-2xl font-bold tracking-wider text-gold-gradient block">
-                  DOVAAN
+                <span className="font-cinzel text-2xl font-bold tracking-wider text-gold-gradient block leading-tight">
+                  DOVVAN
                 </span>
-                <span className="text-xs tracking-[0.2em] text-[#d6c28f] uppercase block">
-                  Homestay &amp; Resort · New Experience
+                <span className="text-xs tracking-[0.14em] text-[#fcedc2] uppercase block font-semibold leading-tight mt-0.5">
+                  Restaurant &amp; Homestay &amp; Resort
+                </span>
+                <span className="text-[10px] tracking-[0.25em] text-[#d6c28f] uppercase block font-medium leading-tight mt-0.5">
+                  NEW EXPERIENCE.
                 </span>
               </div>
             </div>
 
             <p className="text-xs text-[#a3b8ad] leading-relaxed max-w-sm">
-              Named from the word “Dovaan”—the sacred meeting point of two rivers in Sikkim. Where nature, luxury, and adventure meet to craft memories you will cherish forever.
+              Sikkim’s premier riverside sanctuary at the confluence of two mountain rivers in Adampool, Gangtok. From thrilling swings and aqua fun to serene balcony suites and festive banquets.
             </p>
 
             <div className="pt-2 text-xs text-[#d6c28f] italic border-l-2 border-[#d4af37]/60 pl-3">
@@ -207,7 +210,7 @@ export const Footer: React.FC<FooterProps> = ({
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#d4af37] shrink-0 mt-0.5" />
                 <div>
-                  <span className="text-white font-medium block">DOVAAN Homestay &amp; Resort</span>
+                  <span className="text-white font-medium block">DOVVAN Restaurant &amp; Homestay &amp; Resort</span>
                   <span>Adam Pool, New Road, Lower Lingdum, Ranipool, Gangtok, Sikkim — 737135</span>
                   <a
                     href="https://www.google.com/maps/search/?api=1&query=Dovaan+Homestay+and+Resort+Adampool+Ranipool+Sikkim"
@@ -246,7 +249,7 @@ export const Footer: React.FC<FooterProps> = ({
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[#d4af37]/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#8ea89a]">
           <div>
-            © {new Date().getFullYear()} DOVAAN HOMESTAY &amp; RESORT. All Rights Reserved.
+            © {new Date().getFullYear()} DOVVAN RESTAURANT &amp; HOMESTAY &amp; RESORT. All Rights Reserved.
           </div>
 
           <div className="flex items-center gap-4">

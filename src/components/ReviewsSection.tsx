@@ -14,7 +14,7 @@ export const ReviewsSection: React.FC = () => {
             Cherished Memories at the Confluence
           </h2>
           <p className="text-sm sm:text-base text-[#cad9d1]">
-            Read what guests from across India and around the globe have felt during their stay at DOVAAN.
+            Read what guests from across India and around the globe have felt during their visit to Dovvan Restaurant &amp; Homestay &amp; Resort.
           </p>
         </div>
 

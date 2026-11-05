@@ -27,7 +27,7 @@ export const NightlifeSection: React.FC<NightlifeSectionProps> = ({ onBookNightl
             Riverside Barbecue, Karaoke &amp; Bonfires
           </h2>
           <p className="text-sm sm:text-base text-[#cad9d1] leading-relaxed">
-            As twilight descends over Sikkim’s pine mountains, DOVAAN transforms into a starlit wonderland. From sizzling riverbank barbecue grills and joyful karaoke sing-alongs to tranquil strolls on the hanging bridge, every evening crafts cherished memories.
+            As twilight descends over Sikkim’s pine mountains, Dovvan Restaurant &amp; Homestay &amp; Resort transforms into a starlit wonderland. From sizzling riverbank barbecue grills and joyful karaoke sing-alongs to tranquil strolls on the hanging bridge, every evening crafts cherished memories.
           </p>
         </div>
 
@@ -91,10 +91,10 @@ export const NightlifeSection: React.FC<NightlifeSectionProps> = ({ onBookNightl
         {/* Sunset Quote Banner */}
         <div className="bg-gradient-to-r from-[#03140c] via-[#093522] to-[#03140c] border border-[#d4af37]/50 rounded-2xl p-8 sm:p-12 text-center shadow-2xl max-w-4xl mx-auto">
           <p className="font-cinzel text-xl sm:text-2xl text-[#fcedc2] italic mb-4 leading-relaxed">
-            “At DOVAAN, every moment is designed, every view is a masterpiece, and every visit becomes a cherished memory.”
+            “Under the starlit Himalayan sky, the murmuring rhythm of two sacred rivers sets the stage for warm fires, great food, and timeless music.”
           </p>
           <p className="text-xs sm:text-sm text-[#cad9d1] mb-6">
-            Discover the extraordinary and <strong className="text-white">EXPERIENCE DOVAAN</strong>—one destination, endless experiences &amp; unforgettable memories.
+            Gather around crackling embers, savor fresh riverbank barbecues, and sing your heart out with friends and family under the Sikkim constellations.
           </p>
           <button
             onClick={onBookNightlife}

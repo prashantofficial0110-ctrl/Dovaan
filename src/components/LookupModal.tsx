@@ -62,7 +62,7 @@ export const LookupModal: React.FC<LookupModalProps> = ({ isOpen, onClose }) => 
               Reservation Management Portal
             </span>
             <h3 className="font-cinzel text-xl sm:text-2xl font-bold text-white">
-              Lookup Your Dovaan Reservation
+              Lookup Your Dovvan Restaurant &amp; Homestay &amp; Resort Reservation
             </h3>
           </div>
           <button

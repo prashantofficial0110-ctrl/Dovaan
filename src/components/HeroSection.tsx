@@ -54,15 +54,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, setActi
         <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-12">
           {/* Official Dovaan Logo Showcase */}
           <div className="inline-block relative mb-6">
-            <div className="w-28 h-28 sm:w-36 sm:h-36 mx-auto rounded-2xl overflow-hidden border-2 border-[#d4af37]/60 shadow-[0_0_35px_rgba(212,175,55,0.35)] p-1 bg-[#021009] transition-transform duration-500 hover:scale-105">
+            <div className="w-48 h-48 sm:w-60 sm:h-60 mx-auto rounded-3xl overflow-hidden border-2 border-[#d4af37]/70 shadow-[0_0_45px_rgba(212,175,55,0.4)] p-1.5 bg-[#021009] transition-transform duration-500 hover:scale-105">
               <img
-                src="/assets/aistudio/IMG-20261101-WA0003_6ab79521.jpg"
-                alt="Dovaan Homestay & Resort Logo"
-                className="w-full h-full object-cover object-center rounded-xl"
+                src="/assets/logo/dovaan_logo.jpg"
+                alt="Dovvan Restaurant &amp; Homestay &amp; Resort - New Experience"
+                className="w-full h-full object-contain rounded-2xl"
               />
             </div>
-            <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-[#021009] border border-[#d4af37]/50 rounded-full px-3 py-0.5 text-[10px] sm:text-xs text-[#fceec5] tracking-widest uppercase font-semibold whitespace-nowrap shadow-md">
-              Sikkim · India
+            <div className="mt-3 flex items-center justify-center gap-2">
+              <span className="bg-[#021009] border border-[#d4af37]/60 rounded-full px-3.5 py-1 text-[11px] sm:text-xs text-[#fceec5] tracking-widest uppercase font-semibold shadow-md">
+                Adampool · Gangtok · Sikkim
+              </span>
             </div>
           </div>
 
@@ -73,13 +75,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, setActi
 
           {/* Majestic Heading */}
           <h1 className="font-cinzel text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-4 leading-tight">
-            DOVAAN RESORT, <br className="hidden sm:inline" />
-            <span className="text-gold-gradient">A NEW EXPERIENCE</span>
+            DOVVAN RESTAURANT &amp; <br className="hidden sm:inline" />
+            <span className="text-gold-gradient">HOMESTAY &amp; RESORT</span>
           </h1>
 
           {/* Evocative Client Text Summary */}
           <p className="text-sm sm:text-base lg:text-lg text-[#d8e6de] font-normal leading-relaxed max-w-3xl mx-auto text-balance">
-            Named from the sacred Sikkimese word <strong className="text-[#fceec5] font-semibold">“Dovaan”</strong>—the meeting point of two rivers—this enchanting Himalayan destination weaves natural splendor with unforgettable thrills. From the soaring rush of the <strong className="text-[#fceec5]">Sikkim Swing</strong> and <strong className="text-[#fceec5]">Sky Dining</strong> to river-view tower suites, nature-immersed cottages, and starlit barbecue nights, every moment is crafted to feel extraordinary.
+            Named from the sacred Sikkimese word <strong className="text-[#fceec5] font-semibold">“Dovaan”</strong>—the meeting point of two rivers—<strong className="text-white">Dovvan Restaurant &amp; Homestay &amp; Resort</strong> weaves natural splendor with unforgettable thrills. From the soaring rush of the <strong className="text-[#fceec5]">Sikkim Swing</strong> and <strong className="text-[#fceec5]">Sky Dining</strong> to river-view tower suites, nature-immersed cottages, and starlit barbecue nights, every moment is crafted to feel extraordinary.
           </p>
 
           {/* Feature Badges / Highlights */}
@@ -119,7 +121,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, setActi
                     Authentic Property View
                   </span>
                   <h3 className="font-cinzel text-sm sm:text-lg font-bold text-white drop-shadow">
-                    Dovaan Resort at the Two Rivers Confluence
+                    Dovvan Restaurant &amp; Homestay &amp; Resort at the Confluence
                   </h3>
                   <p className="text-xs text-[#cad5cf] hidden sm:block mt-0.5">
                     Illuminated multi-story tower, swimming pool, riverside dining decks &amp; covered bridge over the rapids.
@@ -236,56 +238,69 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, setActi
         </div>
 
         {/* Quick Service Explorers */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-8 sm:mt-12 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-3.5 mt-8 sm:mt-12 max-w-6xl mx-auto">
           <div
             onClick={() => setActiveTab('stay')}
-            className="group p-4 rounded-xl bg-[#072418]/90 border border-[#d4af37]/25 hover:border-[#d4af37] cursor-pointer transition-all hover:-translate-y-1"
+            className="group p-3.5 rounded-xl bg-[#072418]/90 border border-[#d4af37]/25 hover:border-[#d4af37] cursor-pointer transition-all hover:-translate-y-1"
           >
             <div className="text-[#d4af37] font-cinzel text-xs font-semibold uppercase tracking-wider mb-1 flex items-center justify-between">
-              <span>Tower &amp; Cottages</span>
+              <span>Tower &amp; Rooms</span>
               <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </div>
-            <p className="text-xs text-[#cad5cf] line-clamp-2">
-              Private balconies with cascading river vistas &amp; luxury suites.
+            <p className="text-[11px] text-[#cad5cf] line-clamp-2">
+              Private river-view balconies and handcrafted mountain suites.
             </p>
           </div>
 
           <div
             onClick={() => setActiveTab('adventure')}
-            className="group p-4 rounded-xl bg-[#072418]/90 border border-[#d4af37]/25 hover:border-[#d4af37] cursor-pointer transition-all hover:-translate-y-1"
+            className="group p-3.5 rounded-xl bg-[#072418]/90 border border-[#d4af37]/25 hover:border-[#d4af37] cursor-pointer transition-all hover:-translate-y-1"
           >
             <div className="text-[#d4af37] font-cinzel text-xs font-semibold uppercase tracking-wider mb-1 flex items-center justify-between">
               <span>Sikkim Swing</span>
               <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </div>
-            <p className="text-xs text-[#cad5cf] line-clamp-2">
-              Sky walks and thrilling canyon swings soaring above the meeting rivers.
+            <p className="text-[11px] text-[#cad5cf] line-clamp-2">
+              Sky walks and thrilling canyon swings soaring above the rapids.
             </p>
           </div>
 
           <div
             onClick={() => setActiveTab('dining')}
-            className="group p-4 rounded-xl bg-[#072418]/90 border border-[#d4af37]/25 hover:border-[#d4af37] cursor-pointer transition-all hover:-translate-y-1"
+            className="group p-3.5 rounded-xl bg-[#072418]/90 border border-[#d4af37]/25 hover:border-[#d4af37] cursor-pointer transition-all hover:-translate-y-1"
           >
             <div className="text-[#d4af37] font-cinzel text-xs font-semibold uppercase tracking-wider mb-1 flex items-center justify-between">
-              <span>Sky Dining &amp; Seafood</span>
+              <span>Sky Dining &amp; Food</span>
               <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </div>
-            <p className="text-xs text-[#cad5cf] line-clamp-2">
-              Multi-cuisine restaurant with local Sikkim dishes, fresh fish &amp; sky tables.
+            <p className="text-[11px] text-[#cad5cf] line-clamp-2">
+              Multi-cuisine restaurant with Sikkimese recipes &amp; fresh seafood.
+            </p>
+          </div>
+
+          <div
+            onClick={() => setActiveTab('events')}
+            className="group p-3.5 rounded-xl bg-[#072418]/90 border border-[#d4af37]/25 hover:border-[#d4af37] cursor-pointer transition-all hover:-translate-y-1"
+          >
+            <div className="text-[#d4af37] font-cinzel text-xs font-semibold uppercase tracking-wider mb-1 flex items-center justify-between">
+              <span>Weddings &amp; Banquets</span>
+              <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+            </div>
+            <p className="text-[11px] text-[#cad5cf] line-clamp-2">
+              Open-air wedding lawns and an elegant grand banquet hall.
             </p>
           </div>
 
           <div
             onClick={() => setActiveTab('nightlife')}
-            className="group p-4 rounded-xl bg-[#072418]/90 border border-[#d4af37]/25 hover:border-[#d4af37] cursor-pointer transition-all hover:-translate-y-1"
+            className="group p-3.5 rounded-xl bg-[#072418]/90 border border-[#d4af37]/25 hover:border-[#d4af37] cursor-pointer transition-all hover:-translate-y-1 col-span-2 sm:col-span-1"
           >
             <div className="text-[#d4af37] font-cinzel text-xs font-semibold uppercase tracking-wider mb-1 flex items-center justify-between">
-              <span>Riverside BBQ &amp; Nightlife</span>
+              <span>BBQ &amp; Nightlife</span>
               <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </div>
-            <p className="text-xs text-[#cad5cf] line-clamp-2">
-              Live barbecue skewers, campfire circles, karaoke lounge &amp; music under the stars.
+            <p className="text-[11px] text-[#cad5cf] line-clamp-2">
+              Riverside charcoal grills, campfires, karaoke lounge &amp; music.
             </p>
           </div>
         </div>
@@ -310,7 +325,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, setActi
               />
             </div>
             <div className="mt-3 text-center text-xs sm:text-sm text-[#fcedc2]">
-              <span className="font-semibold text-white">Dovaan Homestay &amp; Resort, Sikkim</span> — Authentic evening panorama featuring the tower, pool, dining terraces, and river confluence.
+              <span className="font-semibold text-white">Dovvan Restaurant &amp; Homestay &amp; Resort, Sikkim</span> — Authentic evening panorama featuring the tower, pool, dining terraces, and river confluence.
             </div>
           </div>
         </div>

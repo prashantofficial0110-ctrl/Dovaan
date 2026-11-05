@@ -195,8 +195,8 @@ export const EXPERIENCES: Experience[] = [
     timing: '09:00 AM - 05:30 PM Daily',
     minAge: 12,
     safetyBrief: 'Certified European PETZL harnesses, triple-locking carabiners & certified master instructors.',
-    image: 'https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?auto=format&fit=crop&w=1000&q=80',
-    included: ['Safety gear & helmet', 'GoPro HD flight video capture', 'Certificate of Thrill', 'Warm Sikkim herbal tea'],
+    image: '/assets/experiences/sikkim_swing.jpg',
+    included: ['Safety gear & helmet', 'GoPro HD flight video capture', 'Certificate of Thrill', 'Stunning Swing Dresses Available on Rent (₹500)'],
   },
   {
     id: 'exp-sky-walk',
@@ -281,7 +281,7 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 'dish-2',
     name: 'Chef Special - Roasted Crab Delicacy',
     category: 'seafood',
-    description: 'Dovaan’s signature culinary masterpiece: succulent whole crab wok-tossed in roasted mountain spices, fresh garden herbs, and savory garlic-chili glaze, served on an artisan black platter.',
+    description: 'Dovvan’s signature culinary masterpiece: succulent whole crab wok-tossed in roasted mountain spices, fresh garden herbs, and savory garlic-chili glaze, served on an artisan black platter.',
     price: 850,
     isChefSpecial: true,
     isSeafood: true,
@@ -359,7 +359,7 @@ export const BOOKING_ADDONS: BookingAddon[] = [
     name: 'Pakyong / Bagdogra Airport Luxury 4x4 Transfer',
     category: 'Transport',
     price: 3499,
-    description: 'Private chauffeur SUV pickup or drop directly to Dovaan Resort gate.',
+    description: 'Private chauffeur SUV pickup or drop directly to Dovvan Restaurant & Homestay & Resort gate.',
   },
 ];
 
@@ -499,7 +499,7 @@ export const REVIEWS: Review[] = [
     rating: 5,
     date: 'October 2026',
     review:
-      'Dovaan is heavenly! The name truly fits—you see two glistening mountain rivers collide right beneath your room balcony. The Sikkim Swing was an adrenaline rush of a lifetime, and the fresh river trout at the multi-cuisine restaurant was cooked to perfection.',
+      'Dovvan Restaurant & Homestay & Resort is heavenly! The name truly fits—you see two glistening mountain rivers collide right beneath your room balcony. The Sikkim Swing was an adrenaline rush of a lifetime, and the fresh river trout at the multi-cuisine restaurant was cooked to perfection.',
     stayedAt: 'Sikkim Confluence Tower Suite',
     verifiedBooking: true,
   },

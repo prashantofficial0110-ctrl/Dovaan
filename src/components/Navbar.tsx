@@ -95,20 +95,23 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="flex items-center gap-3 cursor-pointer group"
           >
             {/* User Uploaded Logo Image */}
-            <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden border border-[#d4af37]/40 p-0.5 bg-[#03140c] shadow-[0_0_15px_rgba(212,175,55,0.2)] group-hover:border-[#d4af37] transition-all">
+            <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden border border-[#d4af37]/60 p-1 bg-[#020e08] shadow-[0_0_15px_rgba(212,175,55,0.25)] group-hover:border-[#d4af37] transition-all shrink-0">
               <img
-                src="/assets/aistudio/IMG-20261101-WA0003_6ab79521.jpg"
-                alt="Dovaan Homestay & Resort Logo"
-                className="w-full h-full object-cover object-center rounded transform group-hover:scale-105 transition-transform duration-300"
+                src="/assets/logo/dovaan_logo.jpg"
+                alt="Dovvan Restaurant &amp; Homestay &amp; Resort - New Experience"
+                className="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-300"
               />
             </div>
 
             <div className="flex flex-col">
-              <span className="font-cinzel text-xl sm:text-2xl font-bold tracking-wider text-gold-gradient">
-                DOVAAN
+              <span className="font-cinzel text-xl sm:text-2xl font-bold tracking-wider text-gold-gradient leading-tight">
+                DOVVAN
               </span>
-              <span className="text-[10px] sm:text-xs tracking-[0.25em] text-[#d6c28f] uppercase font-light">
-                Homestay &amp; Resort · Sikkim
+              <span className="text-[10px] sm:text-[11px] tracking-[0.14em] text-[#fcedc2] uppercase font-semibold leading-tight mt-0.5">
+                Restaurant &amp; Homestay &amp; Resort
+              </span>
+              <span className="text-[9px] tracking-[0.25em] text-[#d6c28f] uppercase font-medium leading-tight">
+                NEW EXPERIENCE.
               </span>
             </div>
           </div>

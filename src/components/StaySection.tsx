@@ -48,7 +48,7 @@ export const StaySection: React.FC<StaySectionProps> = ({ onSelectRoomForBooking
             Tower Rooms &amp; Riverview Cottages
           </h2>
           <p className="text-sm sm:text-base text-[#cad9d1] leading-relaxed">
-            Every room and cottage at Dovaan is architecturally positioned to celebrate our defining marvel—the meeting point of two mountain rivers. Featuring private handcrafted balconies, panoramic glass expanses, and the gentle roar of rushing waters to soothe your soul.
+            Every room and cottage at Dovvan Restaurant &amp; Homestay &amp; Resort is architecturally positioned to celebrate our defining marvel—the meeting point of two mountain rivers. Featuring private handcrafted balconies, panoramic glass expanses, and the gentle roar of rushing waters to soothe your soul.
           </p>
 
           {/* Interactive Filter Control */}

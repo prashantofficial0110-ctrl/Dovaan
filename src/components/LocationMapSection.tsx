@@ -37,19 +37,22 @@ export const LocationMapSection: React.FC = () => {
           <div className="lg:col-span-5 bg-[#062117] border border-[#d4af37]/40 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl">
             <div>
               <div className="flex items-center gap-3 mb-6 pb-4 border-b border-[#d4af37]/20">
-                <div className="w-12 h-12 rounded-xl overflow-hidden border border-[#d4af37] shrink-0 bg-[#020e08]">
+                <div className="w-14 h-14 rounded-xl overflow-hidden border border-[#d4af37]/60 shrink-0 bg-[#020e08] p-1 shadow-gold">
                   <img
-                    src="/assets/aistudio/IMG-20261101-WA0003_6ab79521.jpg"
-                    alt="Dovaan Logo"
-                    className="w-full h-full object-cover"
+                    src="/assets/logo/dovaan_logo.jpg"
+                    alt="Dovvan Restaurant &amp; Homestay &amp; Resort"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <div>
-                  <h3 className="font-cinzel text-lg font-bold text-white">
-                    DOVAAN Homestay &amp; Resort
+                  <h3 className="font-cinzel text-lg font-bold text-white leading-tight">
+                    DOVVAN RESTAURANT &amp; HOMESTAY &amp; RESORT
                   </h3>
-                  <span className="text-[11px] text-[#d4af37] tracking-wider uppercase font-medium">
-                    Adampool · Ranipool · Sikkim
+                  <span className="text-[10px] text-[#d4af37] tracking-wider uppercase font-semibold block mt-0.5">
+                    NEW EXPERIENCE. · SIKKIM
+                  </span>
+                  <span className="text-[11px] text-[#cad5cf] block">
+                    Adampool · New Road Gangtok
                   </span>
                 </div>
               </div>

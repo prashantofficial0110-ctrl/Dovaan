@@ -195,19 +195,19 @@ export const BookingModal: React.FC<BookingModalProps> = ({
         {/* Header */}
         <div className="p-4 sm:p-6 border-b border-[#d4af37]/25 flex items-center justify-between bg-[#03140c]">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg overflow-hidden border border-[#d4af37]/50 bg-[#020e08] shrink-0">
+            <div className="w-12 h-12 rounded-xl overflow-hidden border border-[#d4af37]/60 bg-[#020e08] shrink-0 p-1">
               <img
-                src="/assets/aistudio/IMG-20261101-WA0003_6ab79521.jpg"
-                alt="Dovaan Logo"
-                className="w-full h-full object-cover"
+                src="/assets/logo/dovaan_logo.jpg"
+                alt="Dovvan Restaurant &amp; Homestay &amp; Resort"
+                className="w-full h-full object-contain"
               />
             </div>
             <div>
               <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#d4af37] font-semibold block">
-                Direct Online Booking System
+                DOVVAN RESTAURANT &amp; HOMESTAY &amp; RESORT · NEW EXPERIENCE.
               </span>
               <h3 className="font-cinzel text-lg sm:text-2xl font-bold text-white">
-                Reserve Your Experience at DOVAAN
+                Direct Reservation System
               </h3>
             </div>
           </div>
@@ -613,13 +613,16 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 <div className="flex items-center justify-between border-b border-[#d4af37]/30 pb-4 mb-4">
                   <div className="flex items-center gap-3">
                     <img
-                      src="/assets/aistudio/IMG-20261101-WA0003_6ab79521.jpg"
-                      alt="Dovaan Logo"
-                      className="w-14 h-14 rounded-lg object-cover border border-[#d4af37]/50"
+                      src="/assets/logo/dovaan_logo.jpg"
+                      alt="Dovvan Restaurant &amp; Homestay &amp; Resort"
+                      className="w-16 h-16 rounded-xl object-contain border border-[#d4af37]/60 bg-[#020e08] p-1"
                     />
                     <div>
                       <div className="font-cinzel text-lg font-bold text-gold-gradient">
-                        DOVAAN RESORT · SIKKIM
+                        DOVVAN RESTAURANT &amp; HOMESTAY &amp; RESORT
+                      </div>
+                      <div className="text-[10px] text-[#d4af37] uppercase tracking-wider font-semibold">
+                        NEW EXPERIENCE. · SIKKIM
                       </div>
                       <div className="text-[10px] text-[#cadcf1] uppercase tracking-wider">
                         Official Guest Reservation Voucher

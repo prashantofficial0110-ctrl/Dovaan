@@ -431,12 +431,18 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
         {!currentStaff ? (
           <div className="p-6 sm:p-10 flex flex-col items-center justify-center max-w-md mx-auto w-full my-auto text-center">
             {/* Logo */}
-            <div className="w-20 h-20 rounded-2xl overflow-hidden border-2 border-[#d4af37]/60 shadow-[0_0_25px_rgba(212,175,55,0.3)] bg-[#020e08] p-1 mb-4">
+            <div className="w-24 h-24 rounded-2xl overflow-hidden border-2 border-[#d4af37]/60 shadow-[0_0_25px_rgba(212,175,55,0.3)] bg-[#020e08] p-1.5 mb-3">
               <img
-                src="/assets/aistudio/IMG-20261101-WA0003_6ab79521.jpg"
-                alt="Dovaan Logo"
-                className="w-full h-full object-cover rounded-xl"
+                src="/assets/logo/dovaan_logo.jpg"
+                alt="Dovvan Restaurant &amp; Homestay &amp; Resort"
+                className="w-full h-full object-contain rounded-xl"
               />
+            </div>
+            <div className="font-cinzel text-base font-bold text-gold-gradient mb-0.5">
+              DOVVAN RESTAURANT &amp; HOMESTAY &amp; RESORT
+            </div>
+            <div className="text-[10px] text-[#d6c28f] uppercase tracking-widest font-semibold mb-3">
+              NEW EXPERIENCE.
             </div>
 
             <div className="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-[#d4af37] font-semibold mb-1">

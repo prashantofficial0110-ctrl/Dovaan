@@ -47,10 +47,10 @@ export const DiningSection: React.FC<DiningSectionProps> = ({ onReserveSkyDining
             <span>Culinary Symphony in Sikkim</span>
           </div>
           <h2 className="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-            DOVAAN Multi-Cuisine Restaurant
+            Dovvan Restaurant &amp; Homestay &amp; Resort
           </h2>
           <p className="text-sm sm:text-base text-[#cad9d1] leading-relaxed max-w-3xl mx-auto">
-            Discover an exceptional culinary journey at DOVAAN’s multi-cuisine restaurant, where an extensive selection of delicious dishes awaits. From authentic Sikkim local delicacies and popular international cuisines to an exquisite variety of fresh seafood, every dish is thoughtfully prepared with high-grade ingredients, warm hospitality, and unforgettable riverfront ambiance.
+            Discover an exceptional culinary journey at Dovvan Restaurant &amp; Homestay &amp; Resort, where an extensive multi-cuisine selection of delicious dishes awaits. From authentic Sikkim local delicacies and popular international cuisines to an exquisite variety of fresh seafood, every dish is thoughtfully prepared with high-grade ingredients, warm hospitality, and unforgettable riverfront ambiance.
           </p>
 
           {/* Interactive Menu Tabs */}

@@ -45,7 +45,7 @@ export const EventsSection: React.FC = () => {
             Weddings, Banquets &amp; Corporate Summits
           </h2>
           <p className="text-sm sm:text-base text-[#cad9d1] leading-relaxed">
-            For events, we offer an elegant open-air venue, a grand banquet hall, and a modern conference hall—perfect for destination weddings, corporate gatherings, and celebratory milestones where nature’s majesty meets royal hospitality.
+            At Dovvan Restaurant &amp; Homestay &amp; Resort, we offer an elegant open-air venue, a grand banquet hall, and a modern conference hall—perfect for destination weddings, corporate gatherings, and celebratory milestones where nature’s majesty meets royal hospitality.
           </p>
         </div>
 
