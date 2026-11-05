@@ -61,6 +61,14 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onExploreServices, o
       badge: 'Balcony & River Suite',
       isOfficial: true,
     },
+    {
+      id: 'dovaan-tower-viewpoint',
+      title: 'Architectural Tower, Sky Deck & Swimming Pool',
+      subtitle: 'Authentic daytime view of our multi-tier signature tower with top observation deck, balconies, water slides, and swimming pool',
+      url: '/assets/experiences/sky_walk_viewpoint.jpg',
+      badge: 'Tower & Sky Deck',
+      isOfficial: true,
+    },
   ];
 
   const [activePhotoIndex, setActivePhotoIndex] = useState(0);

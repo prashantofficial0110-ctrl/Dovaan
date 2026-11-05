@@ -35,8 +35,6 @@ export const DEFAULT_RATES: ResortRates = {
     'dish-4': { price: 520 },
     'dish-5': { price: 680 },
     'dish-6': { price: 790 },
-    'dish-7': { price: 360 },
-    'dish-8': { price: 320 },
   },
   taxPercentage: 12,
   lastUpdated: '2026-11-01T00:00:00Z',
@@ -214,7 +212,7 @@ export const EXPERIENCES: Experience[] = [
     timing: '08:00 AM - 06:00 PM',
     minAge: 5,
     safetyBrief: 'Slip-resistant protective shoe covers provided. Monitored wind speed sensors.',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80',
+    image: '/assets/experiences/sky_walk_viewpoint.jpg',
     included: ['Sky Walk Access Pass', 'Souvenir Photo Print', 'Complimentary Binoculars access'],
   },
   {
@@ -277,6 +275,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 490,
     isChefSpecial: true,
     spiceLevel: 'Signature Hot',
+    image: '/assets/food/sikkimese_thukpa_momos.jpg',
   },
   {
     id: 'dish-2',
@@ -329,25 +328,6 @@ export const MENU_ITEMS: MenuItem[] = [
     isSeafood: true,
     spiceLevel: 'Signature Hot',
     image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 'dish-7',
-    name: 'Chhurpi Sweet Tart with Wild Himalayan Berry Coulis',
-    category: 'dessert',
-    description: 'Rich artisanal cheese tart crafted from high-pasture yak dairy, paired with tart wild berries harvested from nearby Sikkim hills.',
-    price: 360,
-    isChefSpecial: true,
-    spiceLevel: 'Mild',
-    image: 'https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 'dish-8',
-    name: 'Dovaan Golden Confluence Signature Mocktail',
-    category: 'beverage',
-    description: 'Fresh passionfruit, lemongrass infusion, sparkling mountain spring water, and edible 24k gold leaf flakes.',
-    price: 320,
-    isChefSpecial: true,
-    image: 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80',
   },
 ];
 

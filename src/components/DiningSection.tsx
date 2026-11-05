@@ -10,6 +10,8 @@ import {
   Calendar,
   CheckCircle,
   ArrowRight,
+  Maximize2,
+  X,
 } from 'lucide-react';
 
 interface DiningSectionProps {
@@ -17,8 +19,9 @@ interface DiningSectionProps {
 }
 
 export const DiningSection: React.FC<DiningSectionProps> = ({ onReserveSkyDining }) => {
-  const [categoryFilter, setCategoryFilter] = useState<'all' | 'chef-special' | 'local-sikkim' | 'seafood' | 'international' | 'dessert' | 'beverage'>('all');
+  const [categoryFilter, setCategoryFilter] = useState<'all' | 'chef-special' | 'local-sikkim' | 'seafood' | 'international'>('all');
   const [menuItems, setMenuItems] = useState<MenuItem[]>(() => DovaanDatabase.getAllMenuItems());
+  const [previewDish, setPreviewDish] = useState<MenuItem | null>(null);
 
   useEffect(() => {
     const handleRatesUpdate = () => {
@@ -103,16 +106,6 @@ export const DiningSection: React.FC<DiningSectionProps> = ({ onReserveSkyDining
             >
               International
             </button>
-            <button
-              onClick={() => setCategoryFilter('dessert')}
-              className={`px-3 py-1.5 text-xs sm:text-sm font-medium rounded-lg transition-all cursor-pointer ${
-                categoryFilter === 'dessert'
-                  ? 'bg-gold-gradient text-[#04160d] font-bold shadow-gold'
-                  : 'text-[#d6c28f] hover:text-white'
-              }`}
-            >
-              Desserts
-            </button>
           </div>
         </div>
 
@@ -124,14 +117,18 @@ export const DiningSection: React.FC<DiningSectionProps> = ({ onReserveSkyDining
               className="bg-[#062117] border border-[#d4af37]/25 rounded-2xl overflow-hidden shadow-xl hover:border-[#d4af37] transition-all group flex flex-col justify-between"
             >
               {dish.image ? (
-                <div className="relative h-44 overflow-hidden">
+                <div
+                  onClick={() => setPreviewDish(dish)}
+                  className="relative h-48 overflow-hidden cursor-pointer"
+                  title="Click to view full photo"
+                >
                   <img
                     src={dish.image}
                     alt={dish.name}
                     loading="lazy"
                     className="w-full h-full object-cover object-[center_35%] group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#062117] via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#062117] via-transparent to-transparent pointer-events-none" />
 
                   {dish.isChefSpecial && (
                     <span className="absolute top-2.5 left-2.5 bg-[#03140c]/90 border border-[#d4af37]/50 text-[#fcedc2] px-2 py-0.5 rounded text-[10px] font-cinzel font-semibold">
@@ -143,6 +140,10 @@ export const DiningSection: React.FC<DiningSectionProps> = ({ onReserveSkyDining
                       {dish.spiceLevel}
                     </span>
                   )}
+
+                  <div className="absolute bottom-2.5 right-2.5 bg-[#03140c]/80 text-[#fcedc2] p-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity border border-[#d4af37]/40 shadow-md">
+                    <Maximize2 className="w-3.5 h-3.5 text-[#d4af37]" />
+                  </div>
                 </div>
               ) : (
                 <div className="relative h-44 bg-gradient-to-b from-[#0b3323] to-[#04160d] border-b border-[#d4af37]/20 flex flex-col items-center justify-center p-4">
@@ -221,6 +222,69 @@ export const DiningSection: React.FC<DiningSectionProps> = ({ onReserveSkyDining
           </div>
         </div>
       </div>
+
+      {/* Dish Photo Lightbox Modal */}
+      {previewDish && (
+        <div
+          className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4"
+          onClick={() => setPreviewDish(null)}
+        >
+          <div
+            className="bg-[#051c11] border-2 border-[#d4af37]/60 rounded-2xl max-w-3xl w-full overflow-hidden shadow-2xl relative animate-in fade-in zoom-in-95 duration-200"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="relative aspect-[3/2] max-h-[60vh] w-full overflow-hidden bg-black">
+              {previewDish.image && (
+                <img
+                  src={previewDish.image}
+                  alt={previewDish.name}
+                  className="w-full h-full object-contain"
+                />
+              )}
+              <button
+                onClick={() => setPreviewDish(null)}
+                className="absolute top-3 right-3 p-2 rounded-full bg-black/70 hover:bg-black text-[#d4af37] hover:text-white border border-[#d4af37]/40 transition-all cursor-pointer"
+                title="Close"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="p-5 sm:p-6 bg-[#03140c] border-t border-[#d4af37]/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-[10px] uppercase tracking-widest text-[#d4af37] font-semibold bg-[#0b3323] px-2 py-0.5 rounded border border-[#d4af37]/30">
+                    {previewDish.category.replace('-', ' ')}
+                  </span>
+                  {previewDish.isChefSpecial && (
+                    <span className="text-[10px] text-[#fcedc2] bg-amber-950/70 border border-amber-500/40 px-2 py-0.5 rounded">
+                      Chef Special
+                    </span>
+                  )}
+                  {previewDish.spiceLevel && (
+                    <span className="text-[10px] text-red-200 bg-red-950/70 border border-red-500/40 px-2 py-0.5 rounded">
+                      {previewDish.spiceLevel}
+                    </span>
+                  )}
+                </div>
+                <h3 className="font-cinzel text-lg sm:text-xl font-bold text-white">
+                  {previewDish.name}
+                </h3>
+                <p className="text-xs text-[#cad5cf] mt-1 max-w-xl leading-relaxed">
+                  {previewDish.description}
+                </p>
+              </div>
+
+              <div className="shrink-0 text-right sm:pl-4 border-t sm:border-t-0 sm:border-l border-[#d4af37]/20 pt-3 sm:pt-0 w-full sm:w-auto flex sm:flex-col justify-between items-center sm:items-end">
+                <span className="text-[11px] text-[#8ea89a]">A la carte</span>
+                <span className="font-cinzel text-2xl font-bold text-gold-gradient">
+                  ₹{previewDish.price}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
