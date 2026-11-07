@@ -65,7 +65,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-fade-green text-[#eef4f1] flex flex-col selection:bg-[#d4af37] selection:text-[#04160d]">
+    <div className="min-h-screen bg-white text-[#1a2e22] flex flex-col selection:bg-[#d4af37] selection:text-[#04160d]">
       {/* Toast Notification */}
       {notification && (
         <div className="fixed top-24 right-4 z-50 bg-[#062117] border-2 border-[#d4af37] text-[#fcedc2] px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 animate-bounce">

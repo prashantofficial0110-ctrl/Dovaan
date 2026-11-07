@@ -14,12 +14,13 @@ export const DEFAULT_RATES: ResortRates = {
     'room-tower-deluxe': { pricePerNight: 7499, originalPrice: 9499 },
     'room-tower-family': { pricePerNight: 11999, originalPrice: 14500 },
     'room-luxury-cottage': { pricePerNight: 8999, originalPrice: 10999 },
+    'room-double-queen': { pricePerNight: 5999, originalPrice: 7499 },
   },
   experiences: {
     'exp-sikkim-swing': { price: 1499 },
     'exp-sky-walk': { price: 799 },
     'exp-sky-dining': { price: 3499 },
-    'exp-hanging-bridge': { price: 299 },
+    'exp-hanging-bridge': { price: 4999 },
     'exp-bbq-karaoke': { price: 1299 },
   },
   addons: {
@@ -177,6 +178,40 @@ export const INITIAL_ROOMS: Room[] = [
     totalUnits: 6,
     availableUnits: 4,
   },
+  {
+    id: 'room-double-queen',
+    name: 'Double Bed Queen Size Bedroom',
+    category: 'tower',
+    tagline: 'Spacious family luxury with two queen wooden beds and golden chandelier lounge',
+    description:
+      'Beautifully designed for families and group travelers, this spacious bedroom features two handcrafted solid wood queen beds with plush duvets, warm cove lighting, crystal chandelier, cane lounge seating, and serene mountain valley air.',
+    pricePerNight: 5999,
+    originalPrice: 7499,
+    capacity: { adults: 4, children: 2 },
+    bedType: '2 Queen Beds with Ortho Mattresses',
+    view: 'Garden & Mountain Valley View',
+    sizeSqFt: 620,
+    balcony: true,
+    riverView: true,
+    amenities: [
+      'Two Solid Wood Queen Beds',
+      'Artisanal Chandelier & Warm Cove Lighting',
+      'Cane Lounge Coffee Table & Armchairs',
+      'Mini Bar Refrigerator & Electric Kettle',
+      'Complimentary Gourmet Sikkim Breakfast',
+      'High-Speed Optical Wi-Fi & Smart TV',
+      'Private Bathroom with Hot Rain Shower',
+    ],
+    features: ['Double Queen Beds', 'Family Lounge Area', 'Welcome Platter', 'River Breeze Windows'],
+    image: '/assets/rooms/double_bed_queen_room.jpg',
+    gallery: [
+      '/assets/rooms/double_bed_queen_room.jpg',
+      '/assets/rooms/balcony_river_suite.jpg',
+      '/assets/hero/hero_top_banner.jpg',
+    ],
+    totalUnits: 6,
+    availableUnits: 4,
+  },
 ];
 
 // Rich Experiences Catalogue
@@ -234,19 +269,25 @@ export const EXPERIENCES: Experience[] = [
   },
   {
     id: 'exp-hanging-bridge',
-    title: 'The Whispering Hanging Bridge',
+    title: 'Double Bed Queen Size Bedroom',
     category: 'adventure',
-    subtitle: 'Swaying suspension bridge connecting the two river shores',
+    subtitle: 'Two handcrafted wooden queen beds with ambient cove lighting & crystal chandelier',
     description:
-      'Traverse our photogenic hanging suspension bridge hung across the roaring rapids. Adorned with traditional colorful prayer flags, it is the premier spot for morning strolls and Instagram-worthy golden hour photography.',
-    highlight: 'Connects the Homestay Grounds to Secluded Forest Trails',
-    price: 299,
-    priceUnit: 'Complimentary for resident guests',
-    duration: 'Open all day',
-    timing: '06:00 AM - 09:00 PM',
-    safetyBrief: 'High tensile steel cables with enclosed safety mesh.',
-    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=80',
-    included: ['Bridge crossing access', 'Access to riverside pebble beach and meditation stones'],
+      'Indulge in spacious Himalayan luxury inside our exquisitely designed double queen bedroom. Features two solid wood queen beds dressed in crisp duvets, warm ambient cove lighting, an artisanal crystal chandelier, a cane armchair lounge table, and a complimentary welcome fruit & tea platter.',
+    highlight: 'Two Queen Beds · Chandelier & Cane Lounge',
+    price: 4999,
+    priceUnit: 'per night (Includes Gourmet Breakfast)',
+    duration: 'Check-in 02:00 PM · Check-out 11:00 AM',
+    timing: '24/7 Concierge & In-Room Service',
+    safetyBrief: 'Secure keycard access, soundproof windows, and premium orthopedic mattresses.',
+    image: '/assets/rooms/double_bed_queen_room.jpg',
+    included: [
+      '2 Handcrafted Solid Wood Queen Beds with Crisp Linens',
+      'Warm Ambient Cove Lighting & Crystal Chandelier',
+      'Comfortable Cane Seating & Coffee Lounge Table',
+      'Complimentary Welcome Fresh Fruit & Sikkim Tea Platter',
+      'Mini Bar Refrigerator & High-Speed Optical Wi-Fi',
+    ],
   },
   {
     id: 'exp-bbq-karaoke',
@@ -281,7 +322,7 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 'dish-2',
     name: 'Chef Special - Roasted Crab Delicacy',
     category: 'seafood',
-    description: 'Dovvan’s signature culinary masterpiece: succulent whole crab wok-tossed in roasted mountain spices, fresh garden herbs, and savory garlic-chili glaze, served on an artisan black platter.',
+    description: 'Dovaan’s signature culinary masterpiece: succulent whole crab wok-tossed in roasted mountain spices, fresh garden herbs, and savory garlic-chili glaze, served on an artisan black platter.',
     price: 850,
     isChefSpecial: true,
     isSeafood: true,
@@ -307,7 +348,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 520,
     isChefSpecial: true,
     spiceLevel: 'Medium',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/food/bamboo_shoot_curry.jpg',
   },
   {
     id: 'dish-5',
@@ -327,7 +368,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 790,
     isSeafood: true,
     spiceLevel: 'Signature Hot',
-    image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/food/chilli_calamari_squid.jpg',
   },
 ];
 
@@ -359,7 +400,7 @@ export const BOOKING_ADDONS: BookingAddon[] = [
     name: 'Pakyong / Bagdogra Airport Luxury 4x4 Transfer',
     category: 'Transport',
     price: 3499,
-    description: 'Private chauffeur SUV pickup or drop directly to Dovvan Restaurant & Homestay & Resort gate.',
+    description: 'Private chauffeur SUV pickup or drop directly to Dovaan Homestay and Resort gate.',
   },
 ];
 
@@ -499,7 +540,7 @@ export const REVIEWS: Review[] = [
     rating: 5,
     date: 'October 2026',
     review:
-      'Dovvan Restaurant & Homestay & Resort is heavenly! The name truly fits—you see two glistening mountain rivers collide right beneath your room balcony. The Sikkim Swing was an adrenaline rush of a lifetime, and the fresh river trout at the multi-cuisine restaurant was cooked to perfection.',
+      'Dovaan Homestay and Resort is heavenly! The name truly fits—you see two glistening mountain rivers collide right beneath your room balcony. The Sikkim Swing was an adrenaline rush of a lifetime, and the fresh river trout was cooked to perfection.',
     stayedAt: 'Sikkim Confluence Tower Suite',
     verifiedBooking: true,
   },

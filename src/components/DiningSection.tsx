@@ -39,18 +39,18 @@ export const DiningSection: React.FC<DiningSectionProps> = ({ onReserveSkyDining
 
 
   return (
-    <section className="py-16 sm:py-24 bg-fade-green relative">
+    <section className="py-16 sm:py-24 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-[#d4af37] font-semibold mb-2">
+          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-[#9e7d23] font-semibold mb-2">
             <span>Culinary Symphony in Sikkim</span>
           </div>
-          <h2 className="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Dovvan Restaurant &amp; Homestay &amp; Resort
+          <h2 className="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-[#062117] mb-4">
+            Dovaan Homestay and Resort
           </h2>
-          <p className="text-sm sm:text-base text-[#cad9d1] leading-relaxed max-w-3xl mx-auto">
-            Discover an exceptional culinary journey at Dovvan Restaurant &amp; Homestay &amp; Resort, where an extensive multi-cuisine selection of delicious dishes awaits. From authentic Sikkim local delicacies and popular international cuisines to an exquisite variety of fresh seafood, every dish is thoughtfully prepared with high-grade ingredients, warm hospitality, and unforgettable riverfront ambiance.
+          <p className="text-sm sm:text-base text-[#2d4b3b] leading-relaxed max-w-3xl mx-auto">
+            Discover an exceptional culinary journey at Dovaan Homestay and Resort, where an extensive multi-cuisine selection of delicious dishes awaits. From authentic Sikkim local delicacies and popular international cuisines to an exquisite variety of fresh seafood, every dish is thoughtfully prepared with high-grade ingredients, warm hospitality, and unforgettable riverfront ambiance.
           </p>
 
           {/* Interactive Menu Tabs */}

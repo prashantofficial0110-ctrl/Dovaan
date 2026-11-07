@@ -18,7 +18,7 @@ export const EventsSection: React.FC = () => {
     email: '',
     phone: '',
     eventType: 'wedding' as 'wedding' | 'corporate' | 'celebration' | 'photoshoot',
-    preferredVenue: 'open-air-lawn' as 'grand-banquet' | 'open-air-lawn' | 'conference-hall' | 'all-inclusive',
+    preferredVenue: 'exclusive-garden' as 'grand-banquet' | 'open-air-lawn' | 'exclusive-garden' | 'wedding-in-water' | 'conference-hall' | 'all-inclusive',
     tentativeDate: '2026-12-20',
     estimatedGuests: 150,
     budgetRange: '₹8,00,000 - ₹12,00,000',
@@ -34,53 +34,53 @@ export const EventsSection: React.FC = () => {
   };
 
   return (
-    <section className="py-16 sm:py-24 bg-fade-green relative">
+    <section className="py-16 sm:py-24 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-[#d4af37] font-semibold mb-2">
+          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-[#9e7d23] font-semibold mb-2">
             <span>Celebrations by the River</span>
           </div>
-          <h2 className="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-[#062117] mb-4">
             Weddings, Banquets &amp; Corporate Summits
           </h2>
-          <p className="text-sm sm:text-base text-[#cad9d1] leading-relaxed">
-            At Dovvan Restaurant &amp; Homestay &amp; Resort, we offer an elegant open-air venue, a grand banquet hall, and a modern conference hall—perfect for destination weddings, corporate gatherings, and celebratory milestones where nature’s majesty meets royal hospitality.
+          <p className="text-sm sm:text-base text-[#2d4b3b] leading-relaxed">
+            At Dovaan Homestay and Resort, we offer an elegant open-air venue, a grand banquet hall, and a modern conference hall—perfect for destination weddings, corporate gatherings, and celebratory milestones where nature’s majesty meets royal hospitality.
           </p>
         </div>
 
         {/* 3 Venue Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-          {/* Venue 1: Open Air */}
+          {/* Venue 1: Himalayan Exclusive Garden */}
           <div className="bg-[#062117] border border-[#d4af37]/30 rounded-2xl overflow-hidden shadow-2xl flex flex-col justify-between group hover:border-[#d4af37] transition-all">
             <div>
               <div className="relative h-56 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80"
-                  alt="Elegant Open-Air Venue"
+                  src="/assets/events/himalayan_exclusive_garden.png"
+                  alt="Himalayan Exclusive Garden - Dovaan Homestay and Resort"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#062117] via-transparent to-transparent" />
                 <span className="absolute top-3 left-3 bg-[#03140c]/90 border border-[#d4af37]/40 text-[#fcedc2] px-2.5 py-1 rounded text-xs font-cinzel">
-                  Riverside Lawn
+                  Garden Pavilion
                 </span>
               </div>
               <div className="p-6">
                 <h3 className="font-cinzel text-xl font-bold text-white mb-2">
-                  Elegant Open-Air Venue
+                  Himalayan Exclusive Garden
                 </h3>
                 <p className="text-xs text-[#cad5cf] leading-relaxed mb-4">
-                  Surrounded by sweeping river curves and pine trees, our manicured lawn provides an enchanting setting for mandap setups, sundowner cocktail parties, and fairy-lit celebrations under the stars.
+                  Nestled amidst verdant alpine slopes and fresh mountain breezes, this exclusive glass-canopied garden terrace offers a private sanctuary with botanical ivy arches, patterned tiled promenades, and plush lounge seating overlooking the river valley.
                 </p>
                 <div className="space-y-1.5 text-xs text-[#d6c28f]">
-                  <div>• Capacity: Up to 500 Guests</div>
-                  <div>• Riverside Stage &amp; Ambient Lighting</div>
-                  <div>• Live Barbecue &amp; Bonfire Stations</div>
+                  <div>• Covered Glass Canopy &amp; Botanical Ivy Pergola</div>
+                  <div>• Scenic Riverside Valley Vistas &amp; Alpine Mountain Air</div>
+                  <div>• Elegant Lounge Banquettes, Cocktail Tables &amp; Private Bar Setup</div>
                 </div>
               </div>
             </div>
             <div className="p-6 pt-0">
-              <span className="text-[11px] text-[#8ea89a]">Ideal for Destination Weddings &amp; Receptions</span>
+              <span className="text-[11px] text-[#8ea89a]">Ideal for Intimate Receptions, Mehendi Celebrations &amp; Sundowner Soirées</span>
             </div>
           </div>
 
@@ -117,36 +117,36 @@ export const EventsSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Venue 3: Conference Hall */}
+          {/* Venue 3: Wedding in Water */}
           <div className="bg-[#062117] border border-[#d4af37]/30 rounded-2xl overflow-hidden shadow-2xl flex flex-col justify-between group hover:border-[#d4af37] transition-all">
             <div>
               <div className="relative h-56 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=800&q=80"
-                  alt="Executive Conference Hall"
+                  src="/assets/events/wedding_in_water.jpg"
+                  alt="Wedding in Water - Dovaan Homestay and Resort"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#062117] via-transparent to-transparent" />
                 <span className="absolute top-3 left-3 bg-[#03140c]/90 border border-[#d4af37]/40 text-[#fcedc2] px-2.5 py-1 rounded text-xs font-cinzel">
-                  Executive Suite
+                  Floating Mandap
                 </span>
               </div>
               <div className="p-6">
                 <h3 className="font-cinzel text-xl font-bold text-white mb-2">
-                  Himalayan Conference Hall
+                  Wedding in Water
                 </h3>
                 <p className="text-xs text-[#cad5cf] leading-relaxed mb-4">
-                  Equipped with high-speed fiber internet, HD laser projectors, surround audio, and breakout lounges. Inspire innovative thinking away from the city bustle.
+                  Exchange eternal vows atop an illuminated floating floral aisle across the resort pool, surrounded by hundreds of floating candles, fresh rose petals, and the gentle whisper of the merging rivers under the starlit Himalayan night.
                 </p>
                 <div className="space-y-1.5 text-xs text-[#d6c28f]">
-                  <div>• Capacity: 80 - 120 Delegates</div>
-                  <div>• Ergonomic Seating &amp; AV Lectern</div>
-                  <div>• Tea, Coffee &amp; Sikkim Snack Lounges</div>
+                  <div>• Floating Glass &amp; Flower Aisle over Turquoise Water</div>
+                  <div>• 1,000+ Floating Tealights &amp; Rose Petal Carpets</div>
+                  <div>• Dreamy Floral Arch &amp; Fairy-Lit Mountain Ambiance</div>
                 </div>
               </div>
             </div>
             <div className="p-6 pt-0">
-              <span className="text-[11px] text-[#8ea89a]">Ideal for Corporate Retreats &amp; Board Meetings</span>
+              <span className="text-[11px] text-[#8ea89a]">Ideal for Romantic Proposals, Vow Ceremonies &amp; Fairytale Weddings</span>
             </div>
           </div>
         </div>
@@ -244,9 +244,9 @@ export const EventsSection: React.FC = () => {
                     onChange={(e) => setFormData({ ...formData, preferredVenue: e.target.value as any })}
                     className="w-full bg-[#03140c] border border-[#d4af37]/30 rounded-lg px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-[#d4af37]"
                   >
-                    <option value="open-air-lawn">Elegant Open-Air Lawn</option>
+                    <option value="exclusive-garden">Himalayan Exclusive Garden</option>
                     <option value="grand-banquet">The Grand Banquet Hall</option>
-                    <option value="conference-hall">Conference Hall</option>
+                    <option value="wedding-in-water">Wedding in Water (Floating Stage)</option>
                     <option value="all-inclusive">All-Inclusive Resort Buyout</option>
                   </select>
                 </div>

@@ -198,17 +198,20 @@ export const BookingModal: React.FC<BookingModalProps> = ({
             <div className="w-12 h-12 rounded-xl overflow-hidden border border-[#d4af37]/60 bg-[#020e08] shrink-0 p-1">
               <img
                 src="/assets/logo/dovaan_logo.jpg"
-                alt="Dovvan Restaurant &amp; Homestay &amp; Resort"
+                alt="Dovaan Homestay and Resort"
                 className="w-full h-full object-contain"
               />
             </div>
             <div>
               <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#d4af37] font-semibold block">
-                DOVVAN RESTAURANT &amp; HOMESTAY &amp; RESORT · NEW EXPERIENCE.
+                DOVAAN HOMESTAY AND RESORT · NEW EXPERIENCE.
               </span>
               <h3 className="font-cinzel text-lg sm:text-2xl font-bold text-white">
                 Direct Reservation System
               </h3>
+              <div className="hidden md:inline-flex items-center gap-1.5 mt-1 px-3 py-1 rounded-lg bg-[#020e08] border border-[#d4af37]/40 text-[10.5px] text-[#fceec5] font-medium shadow-sm">
+                Multi-Cusine Restaurant | Water Park | Sky Walk | Sky Dining | Sikkim Swing | Rooms | Banquet Hall | Open Air Venue | Traditional Kitchen | Sole pole Restaurant | Hanging Bridge
+              </div>
             </div>
           </div>
           <button
@@ -614,12 +617,12 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   <div className="flex items-center gap-3">
                     <img
                       src="/assets/logo/dovaan_logo.jpg"
-                      alt="Dovvan Restaurant &amp; Homestay &amp; Resort"
+                      alt="Dovaan Homestay and Resort"
                       className="w-16 h-16 rounded-xl object-contain border border-[#d4af37]/60 bg-[#020e08] p-1"
                     />
                     <div>
                       <div className="font-cinzel text-lg font-bold text-gold-gradient">
-                        DOVVAN RESTAURANT &amp; HOMESTAY &amp; RESORT
+                        DOVAAN HOMESTAY AND RESORT
                       </div>
                       <div className="text-[10px] text-[#d4af37] uppercase tracking-wider font-semibold">
                         NEW EXPERIENCE. · SIKKIM

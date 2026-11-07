@@ -55,15 +55,23 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="max-w-7xl mx-auto flex items-center justify-between text-[#d6c28f]">
           <span className="hidden sm:inline-flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-[#d4af37] animate-pulse"></span>
-            Adampool, Lower Lingdum, Ranipool, Sikkim 737135 · Where Two Rivers Meet
+            <span>Adampool, Lower Lingdum, Ranipool, Sikkim 737135</span>
+            <span className="text-[#d4af37]/40">·</span>
+            <span className="text-[#fceec5] font-semibold font-mono tracking-wider bg-[#020e08] border border-[#d4af37]/35 px-2 py-0.5 rounded">
+              GSTIN: 11FIMPS0636D3ZE
+            </span>
           </span>
-          <div className="flex items-center gap-4 mx-auto sm:mx-0">
+          <div className="flex items-center gap-3 mx-auto sm:mx-0">
+            <span className="inline-flex sm:hidden items-center text-[10px] text-[#fceec5] font-mono font-semibold bg-[#020e08] border border-[#d4af37]/35 px-1.5 py-0.5 rounded">
+              GSTIN: 11FIMPS0636D3ZE
+            </span>
             <a
               href="tel:+919883116936"
               className="inline-flex items-center gap-1.5 hover:text-[#fcedc2] transition-colors"
             >
               <Phone className="w-3 h-3 text-[#d4af37]" />
-              <span>Adampool Desk: +91 98831 16936 / +91 83709 60362</span>
+              <span className="hidden md:inline">Adampool Desk:</span>
+              <span>+91 98831 16936</span>
             </a>
             <span className="text-[#d4af37]/40">|</span>
             <button
@@ -98,21 +106,27 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden border border-[#d4af37]/60 p-1 bg-[#020e08] shadow-[0_0_15px_rgba(212,175,55,0.25)] group-hover:border-[#d4af37] transition-all shrink-0">
               <img
                 src="/assets/logo/dovaan_logo.jpg"
-                alt="Dovvan Restaurant &amp; Homestay &amp; Resort - New Experience"
+                alt="Dovaan Homestay and Resort - New Experience"
                 className="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-300"
               />
             </div>
 
             <div className="flex flex-col">
               <span className="font-cinzel text-xl sm:text-2xl font-bold tracking-wider text-gold-gradient leading-tight">
-                DOVVAN
+                DOVAAN
               </span>
               <span className="text-[10px] sm:text-[11px] tracking-[0.14em] text-[#fcedc2] uppercase font-semibold leading-tight mt-0.5">
-                Restaurant &amp; Homestay &amp; Resort
+                Homestay and Resort
               </span>
-              <span className="text-[9px] tracking-[0.25em] text-[#d6c28f] uppercase font-medium leading-tight">
-                NEW EXPERIENCE.
-              </span>
+              <div className="flex items-center gap-1.5 mt-0.5">
+                <span className="text-[9px] tracking-[0.2em] text-[#d6c28f] uppercase font-medium leading-tight">
+                  NEW EXPERIENCE.
+                </span>
+                <span className="text-[#d4af37]/40 text-[9px]">·</span>
+                <span className="text-[9px] font-mono text-[#fceec5] tracking-wide font-semibold">
+                  GSTIN: 11FIMPS0636D3ZE
+                </span>
+              </div>
             </div>
           </div>
 
@@ -217,6 +231,11 @@ export const Navbar: React.FC<NavbarProps> = ({
               <LogIn className="w-4 h-4 text-[#d4af37]" />
               <span>Staff Login &amp; Management</span>
             </button>
+            <div className="pt-2 text-center">
+              <span className="text-[11px] font-mono text-[#fceec5] bg-[#020e08] border border-[#d4af37]/40 px-3 py-1 rounded inline-block font-semibold">
+                GSTIN: 11FIMPS0636D3ZE
+              </span>
+            </div>
           </div>
         </div>
       )}

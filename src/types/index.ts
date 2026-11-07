@@ -119,7 +119,7 @@ export interface EventInquiry {
   email: string;
   phone: string;
   eventType: 'wedding' | 'corporate' | 'celebration' | 'photoshoot';
-  preferredVenue: 'grand-banquet' | 'open-air-lawn' | 'conference-hall' | 'all-inclusive';
+  preferredVenue: 'grand-banquet' | 'open-air-lawn' | 'exclusive-garden' | 'wedding-in-water' | 'conference-hall' | 'all-inclusive';
   tentativeDate: string;
   estimatedGuests: number;
   budgetRange: string;

@@ -43,21 +43,25 @@ export const Footer: React.FC<FooterProps> = ({
               <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border border-[#d4af37]/60 bg-[#020e08] p-1.5 shadow-gold shrink-0">
                 <img
                   src="/assets/logo/dovaan_logo.jpg"
-                  alt="Dovvan Restaurant &amp; Homestay &amp; Resort - New Experience"
+                  alt="Dovaan Homestay and Resort - New Experience"
                   className="w-full h-full object-contain"
                 />
               </div>
               <div>
                 <span className="font-cinzel text-2xl font-bold tracking-wider text-gold-gradient block leading-tight">
-                  DOVVAN
+                  DOVAAN
                 </span>
                 <span className="text-xs tracking-[0.14em] text-[#fcedc2] uppercase block font-semibold leading-tight mt-0.5">
-                  Restaurant &amp; Homestay &amp; Resort
+                  Homestay and Resort
                 </span>
                 <span className="text-[10px] tracking-[0.25em] text-[#d6c28f] uppercase block font-medium leading-tight mt-0.5">
                   NEW EXPERIENCE.
                 </span>
               </div>
+            </div>
+
+            <div className="inline-block bg-[#020e08] border border-[#d4af37]/40 rounded-lg px-3 py-1 text-xs text-[#fcedc2] font-mono font-semibold shadow-md">
+              GSTIN: 11FIMPS0636D3ZE
             </div>
 
             <p className="text-xs text-[#a3b8ad] leading-relaxed max-w-sm">
@@ -210,7 +214,7 @@ export const Footer: React.FC<FooterProps> = ({
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#d4af37] shrink-0 mt-0.5" />
                 <div>
-                  <span className="text-white font-medium block">DOVVAN Restaurant &amp; Homestay &amp; Resort</span>
+                  <span className="text-white font-medium block">DOVAAN Homestay and Resort</span>
                   <span>Adam Pool, New Road, Lower Lingdum, Ranipool, Gangtok, Sikkim — 737135</span>
                   <a
                     href="https://www.google.com/maps/search/?api=1&query=Dovaan+Homestay+and+Resort+Adampool+Ranipool+Sikkim"
@@ -242,14 +246,23 @@ export const Footer: React.FC<FooterProps> = ({
                   <span className="text-[11px] text-[#8ea89a]">reservations@dovaanresort.in</span>
                 </div>
               </div>
+              <div className="pt-1">
+                <span className="text-[11px] font-mono text-[#fcedc2] bg-[#020e08] border border-[#d4af37]/40 px-2.5 py-1 rounded inline-block font-semibold">
+                  GSTIN: 11FIMPS0636D3ZE
+                </span>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[#d4af37]/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#8ea89a]">
-          <div>
-            © {new Date().getFullYear()} DOVVAN RESTAURANT &amp; HOMESTAY &amp; RESORT. All Rights Reserved.
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+            <span>© {new Date().getFullYear()} DOVAAN HOMESTAY AND RESORT. All Rights Reserved.</span>
+            <span className="text-[#d4af37]/40 hidden sm:inline">|</span>
+            <span className="font-mono text-[#fcedc2] font-semibold tracking-wider">
+              GSTIN: 11FIMPS0636D3ZE
+            </span>
           </div>
 
           <div className="flex items-center gap-4">

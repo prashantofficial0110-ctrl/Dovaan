@@ -15,18 +15,18 @@ import {
 
 export const LocationMapSection: React.FC = () => {
   return (
-    <section className="py-16 sm:py-24 bg-[#03130b] relative overflow-hidden border-b border-[#d4af37]/25">
+    <section className="py-16 sm:py-24 bg-white relative overflow-hidden border-b border-[#d4af37]/25">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-[#d4af37] font-semibold mb-2">
+          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-[#9e7d23] font-semibold mb-2">
             <MapPin className="w-3.5 h-3.5" />
             <span>Google Maps Location &amp; Adampool Destination</span>
           </div>
-          <h2 className="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-[#062117] mb-4">
             Visit DOVAAN at Adampool, Sikkim
           </h2>
-          <p className="text-sm sm:text-base text-[#cad9d1] leading-relaxed">
+          <p className="text-sm sm:text-base text-[#2d4b3b] leading-relaxed">
             Conveniently nestled along the serene riverbanks of Adampool, near Lower Lingdum and Ranipool in Gangtok. Easily accessible from Pakyong Airport and Bagdogra.
           </p>
         </div>
@@ -40,13 +40,13 @@ export const LocationMapSection: React.FC = () => {
                 <div className="w-14 h-14 rounded-xl overflow-hidden border border-[#d4af37]/60 shrink-0 bg-[#020e08] p-1 shadow-gold">
                   <img
                     src="/assets/logo/dovaan_logo.jpg"
-                    alt="Dovvan Restaurant &amp; Homestay &amp; Resort"
+                    alt="Dovaan Homestay and Resort"
                     className="w-full h-full object-contain"
                   />
                 </div>
                 <div>
                   <h3 className="font-cinzel text-lg font-bold text-white leading-tight">
-                    DOVVAN RESTAURANT &amp; HOMESTAY &amp; RESORT
+                    DOVAAN HOMESTAY AND RESORT
                   </h3>
                   <span className="text-[10px] text-[#d4af37] tracking-wider uppercase font-semibold block mt-0.5">
                     NEW EXPERIENCE. · SIKKIM

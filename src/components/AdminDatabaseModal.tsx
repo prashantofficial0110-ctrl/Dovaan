@@ -434,12 +434,12 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
             <div className="w-24 h-24 rounded-2xl overflow-hidden border-2 border-[#d4af37]/60 shadow-[0_0_25px_rgba(212,175,55,0.3)] bg-[#020e08] p-1.5 mb-3">
               <img
                 src="/assets/logo/dovaan_logo.jpg"
-                alt="Dovvan Restaurant &amp; Homestay &amp; Resort"
+                alt="Dovaan Homestay and Resort"
                 className="w-full h-full object-contain rounded-xl"
               />
             </div>
             <div className="font-cinzel text-base font-bold text-gold-gradient mb-0.5">
-              DOVVAN RESTAURANT &amp; HOMESTAY &amp; RESORT
+              DOVAAN HOMESTAY AND RESORT
             </div>
             <div className="text-[10px] text-[#d6c28f] uppercase tracking-widest font-semibold mb-3">
               NEW EXPERIENCE.
@@ -833,7 +833,7 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
                         Resort Rates &amp; Tariffs
                       </h4>
                       <p className="text-xs sm:text-sm text-[#cad9d1] max-w-2xl leading-relaxed">
-                        Modify nightly room tariffs, high-altitude adventure passes, multi-cuisine restaurant delicacies, and taxes. Any saved modifications update immediately across the entire website and booking engine.
+                        Modify nightly room tariffs, high-altitude adventure passes, multi-cuisine dining delicacies, and taxes. Any saved modifications update immediately across the entire website and booking engine.
                       </p>
                       <div className="flex items-center gap-3 mt-2 text-[11px] text-[#8ea89a]">
                         <span>
@@ -938,7 +938,7 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
                       }`}
                     >
                       <Utensils className="w-3.5 h-3.5" />
-                      <span>Restaurant Menu ({MENU_ITEMS.length})</span>
+                      <span>Dining Menu ({MENU_ITEMS.length})</span>
                     </button>
                     <button
                       onClick={() => setRatesCategory('taxes')}
@@ -1220,14 +1220,14 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
                     </div>
                   )}
 
-                  {/* 4. RESTAURANT MULTI-CUISINE MENU */}
+                  {/* 4. MULTI-CUISINE DINING MENU */}
                   {(ratesCategory === 'all' || ratesCategory === 'menu') && (
                     <div className="space-y-3 pt-4 border-t border-[#d4af37]/20">
                       <div className="flex items-center justify-between border-b border-[#d4af37]/20 pb-2">
                         <div className="flex items-center gap-2">
                           <Utensils className="w-4 h-4 text-[#d4af37]" />
                           <h5 className="font-cinzel text-base font-bold text-white">
-                            DOVAAN Multi-Cuisine Restaurant Dishes
+                            DOVAAN Multi-Cuisine Dining Dishes
                           </h5>
                         </div>
                         <span className="text-xs text-[#8ea89a]">

@@ -37,18 +37,18 @@ export const StaySection: React.FC<StaySectionProps> = ({ onSelectRoomForBooking
 
 
   return (
-    <section className="py-16 sm:py-24 bg-fade-green relative">
+    <section className="py-16 sm:py-24 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-[#d4af37] font-semibold mb-2">
+          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-[#9e7d23] font-semibold mb-2">
             <span>Luxurious Sanctuaries</span>
           </div>
-          <h2 className="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-[#062117] mb-4">
             Tower Rooms &amp; Riverview Cottages
           </h2>
-          <p className="text-sm sm:text-base text-[#cad9d1] leading-relaxed">
-            Every room and cottage at Dovvan Restaurant &amp; Homestay &amp; Resort is architecturally positioned to celebrate our defining marvel—the meeting point of two mountain rivers. Featuring private handcrafted balconies, panoramic glass expanses, and the gentle roar of rushing waters to soothe your soul.
+          <p className="text-sm sm:text-base text-[#2d4b3b] leading-relaxed">
+            Every room and cottage at Dovaan Homestay and Resort is architecturally positioned to celebrate our defining marvel—the meeting point of two mountain rivers. Featuring private handcrafted balconies, panoramic glass expanses, and the gentle roar of rushing waters to soothe your soul.
           </p>
 
           {/* Interactive Filter Control */}

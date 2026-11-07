@@ -10,9 +10,6 @@ import {
   Eye,
   Maximize2,
   X,
-  Tag,
-  Gift,
-  Percent,
   MapPin,
   Phone,
   Camera,
@@ -35,38 +32,14 @@ interface ConfluencePhoto {
 }
 
 export const AboutSection: React.FC<AboutSectionProps> = ({ onExploreServices, onOpenBooking }) => {
-  // Photos for The Sacred Confluence gallery
+  // Photo for The Sacred Confluence gallery
   const photos: ConfluencePhoto[] = [
     {
-      id: 'dovaan-night-panorama',
-      title: 'Dovvan Restaurant & Homestay & Resort Illuminated Evening Panorama',
-      subtitle: 'Authentic night view of the riverside architectural tower, swimming pool, illuminated gazebo, dining decks, and covered bridge over the rapids',
-      url: '/assets/hero/hero_top_banner.jpg',
-      badge: 'Official Night Panorama',
-      isOfficial: true,
-    },
-    {
-      id: 'dovaan-official-resort',
-      title: 'Dovvan Restaurant & Homestay & Resort Tower at the Confluence',
-      subtitle: 'Official property photo featuring our multi-story tower, riverside views, and alpine greenery in Adampool',
-      url: '/assets/aistudio/IMG-20261101-WA0011_92ba4db1.jpg',
-      badge: 'Official Resort Photo',
-      isOfficial: true,
-    },
-    {
-      id: 'dovaan-balcony-river-suite',
-      title: 'Balcony & River View Suite',
-      subtitle: 'Authentic guest suite featuring warm wooden architecture and panoramic windows overlooking the confluence valley',
-      url: '/assets/rooms/balcony_river_suite.jpg',
-      badge: 'Balcony & River Suite',
-      isOfficial: true,
-    },
-    {
-      id: 'dovaan-tower-viewpoint',
-      title: 'Architectural Tower, Sky Deck & Swimming Pool',
-      subtitle: 'Authentic daytime view of our multi-tier signature tower with top observation deck, balconies, water slides, and swimming pool',
-      url: '/assets/experiences/sky_walk_viewpoint.jpg',
-      badge: 'Tower & Sky Deck',
+      id: 'dovaan-authentic-confluence',
+      title: 'Dovaan Homestay and Resort at the Confluence',
+      subtitle: 'Authentic daytime view of the resort property, towers, riverside terraces, and the sacred river confluence in Adampool',
+      url: '/assets/hero/dovaan_authentic_brochure_view.png',
+      badge: 'Official Property Photo',
       isOfficial: true,
     },
   ];
@@ -129,44 +102,8 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onExploreServices, o
   ];
 
   return (
-    <section className="py-16 sm:py-24 bg-[#03130b] relative overflow-hidden border-b border-[#d4af37]/20">
-      {/* Subtle backdrop accents */}
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-80 h-80 bg-[#0d402b]/20 blur-[100px] pointer-events-none rounded-full" />
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-80 h-80 bg-[#d4af37]/10 blur-[100px] pointer-events-none rounded-full" />
-
+    <section className="py-16 sm:py-24 bg-white relative overflow-hidden border-b border-[#d4af37]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Promotional Offers Banner directly from the Official Poster */}
-        <div className="mb-12 bg-gradient-to-r from-[#03140c] via-[#093221] to-[#03140c] border border-[#d4af37]/40 rounded-2xl p-4 sm:p-5 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-[#0b3323] border border-[#d4af37] flex items-center justify-center text-[#d4af37] shrink-0">
-              <Gift className="w-5 h-5" />
-            </div>
-            <div>
-              <span className="font-cinzel text-xs uppercase tracking-widest text-[#d4af37] font-bold block">
-                Official Special Privileges
-              </span>
-              <p className="text-xs sm:text-sm text-white font-medium">
-                Exclusive resort privileges available for our guests &amp; day visitors in Sikkim
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#04160d] border border-[#d4af37]/40 text-[#fcedc2] text-xs font-semibold">
-              <Percent className="w-3.5 h-3.5 text-[#d4af37]" />
-              10% Discount on All Food
-            </span>
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#04160d] border border-[#d4af37]/40 text-[#fcedc2] text-xs font-semibold">
-              <Sparkles className="w-3.5 h-3.5 text-[#d4af37]" />
-              Buy 2 Get 1 Free Mocktail &amp; Cocktail
-            </span>
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#04160d] border border-amber-500/50 text-amber-200 text-xs font-semibold">
-              <Tag className="w-3.5 h-3.5 text-amber-400" />
-              50% Discount on Hookah (Weekend)
-            </span>
-          </div>
-        </div>
-
         {/* Story & Interactive Visual Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Visual Column: The Sacred Confluence Gallery */}
@@ -246,13 +183,13 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onExploreServices, o
               <div className="w-14 h-14 rounded-xl overflow-hidden border border-[#d4af37]/60 shrink-0 bg-[#020e08] p-1">
                 <img
                   src="/assets/logo/dovaan_logo.jpg"
-                  alt="Dovvan Restaurant &amp; Homestay &amp; Resort"
+                  alt="Dovaan Homestay and Resort"
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="flex-1">
                 <span className="font-cinzel text-xs sm:text-sm font-bold text-[#fcedc2] block">
-                  DOVVAN RESTAURANT &amp; HOMESTAY &amp; RESORT
+                  DOVAAN HOMESTAY AND RESORT
                 </span>
                 <span className="text-[10px] text-[#d6c28f] uppercase tracking-wider block font-semibold">
                   NEW EXPERIENCE. · SIKKIM
@@ -273,30 +210,30 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onExploreServices, o
 
           {/* Right Text Column: The Story & Philosophy */}
           <div className="space-y-6">
-            <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-[#d4af37] font-semibold">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>The Story of Dovvan Restaurant &amp; Homestay &amp; Resort</span>
+            <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-[#9e7d23] font-semibold">
+              <Sparkles className="w-3.5 h-3.5 text-[#d4af37]" />
+              <span>The Story of Dovaan Homestay and Resort</span>
             </div>
 
-            <h2 className="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+            <h2 className="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-[#062117] leading-tight">
               From Peaceful Stays to Thrilling Adventures, Every Moment Brings a New Experience.
             </h2>
 
-            <div className="space-y-4 text-sm sm:text-base text-[#cad9d1] leading-relaxed">
+            <div className="space-y-4 text-sm sm:text-base text-[#2d4b3b] leading-relaxed">
               <p>
-                Nestled along New Road in Adampool, Gangtok, <strong className="text-[#fcedc2] font-semibold">DOVVAN RESTAURANT &amp; HOMESTAY &amp; RESORT</strong> draws its name and essence from the revered junction where two pristine mountain rivers merge into one sacred current. Surrounded by verdant alpine ridges and cascading river sprays, this resort is envisioned as Sikkim’s foremost sanctuary for dining, rest, recreation, and celebration.
+                Nestled along New Road in Adampool, Gangtok, <strong className="text-[#062117] font-bold">DOVAAN HOMESTAY AND RESORT</strong> draws its name and essence from the revered junction where two pristine mountain rivers merge into one sacred current. Surrounded by verdant alpine ridges and cascading river sprays, this resort is envisioned as Sikkim’s foremost sanctuary for dining, rest, recreation, and celebration.
               </p>
               <p>
-                Whether you seek the adrenaline surge of the iconic Sikkim Swing, panoramic perspectives on the glass sky walk, refreshing thrills at the water slides and rain dance pavilion, or family adventures in our VR experience zone—DOVVAN brings every dimension of fun together in one extraordinary property.
+                Whether you seek the adrenaline surge of the iconic Sikkim Swing, panoramic perspectives on the glass sky walk, refreshing thrills at the water slides and rain dance pavilion, or family adventures in our VR experience zone—DOVAAN brings every dimension of fun together in one extraordinary property.
               </p>
               <p>
-                Guests wake to birdsong in handcrafted balcony suites facing the waters, savor authentic Sikkimese multi-cuisine delicacies and fresh seafood at our restaurant, and celebrate life’s grandest occasions across our pillarless banquet halls and open-air riverside lawns.
+                Guests wake to birdsong in handcrafted balcony suites facing the waters, savor authentic Sikkimese multi-cuisine delicacies and fresh seafood at our riverside dining terrace, and celebrate life’s grandest occasions across our pillarless banquet halls and open-air riverside lawns.
               </p>
             </div>
 
             {/* Signature Quotes */}
             <div className="p-4 bg-[#051c11] border-l-4 border-[#d4af37] rounded-r-xl text-xs sm:text-sm text-[#fcedc2] italic">
-              “At DOVVAN RESTAURANT &amp; HOMESTAY &amp; RESORT, every moment is designed, every view is a masterpiece, and every visit becomes a cherished memory. Discover the extraordinary and EXPERIENCE DOVVAN—one destination, endless experiences &amp; unforgettable memories.”
+              “At DOVAAN HOMESTAY AND RESORT, every moment is designed, every view is a masterpiece, and every visit becomes a cherished memory. Discover the extraordinary and EXPERIENCE DOVAAN—one destination, endless experiences &amp; unforgettable memories.”
             </div>
 
             {/* Quick Contact & Location Info from Official Flyer */}
@@ -320,7 +257,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onExploreServices, o
                 onClick={onOpenBooking}
                 className="bg-gold-gradient text-[#04160d] font-bold text-xs sm:text-sm px-6 py-3 rounded-lg shadow-gold hover:brightness-110 active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
               >
-                <span>Experience Dovvan</span>
+                <span>Experience Dovaan</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 
@@ -337,13 +274,13 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onExploreServices, o
         {/* 8 Featured Experiences directly from the Official Flyer */}
         <div className="mt-16 sm:mt-20 pt-12 border-t border-[#d4af37]/20">
           <div className="text-center max-w-2xl mx-auto mb-8">
-            <span className="text-xs uppercase tracking-[0.25em] text-[#d4af37] font-semibold block mb-1">
+            <span className="text-xs uppercase tracking-[0.25em] text-[#9e7d23] font-semibold block mb-1">
               Endless Experiences
             </span>
-            <h3 className="font-cinzel text-2xl sm:text-3xl font-bold text-white">
+            <h3 className="font-cinzel text-2xl sm:text-3xl font-bold text-[#062117]">
               Sikkim’s Ultimate Fun &amp; Adventure Destination
             </h3>
-            <p className="text-xs sm:text-sm text-[#cad9d1] mt-1">
+            <p className="text-xs sm:text-sm text-[#2d4b3b] mt-1">
               Perfect getaway for families, couples, adventurers, friends, and corporate outings.
             </p>
           </div>
@@ -394,7 +331,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onExploreServices, o
                 </div>
                 <div>
                   <h4 className="font-cinzel text-sm sm:text-base font-bold text-white">
-                    DOVVAN RESTAURANT &amp; HOMESTAY &amp; RESORT
+                    DOVAAN HOMESTAY AND RESORT
                   </h4>
                   <span className="text-[11px] text-[#d4af37] font-medium block">
                     NEW EXPERIENCE. · Adampool, Gangtok Sikkim · +91 83709 60362

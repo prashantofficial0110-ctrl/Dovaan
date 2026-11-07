@@ -13,7 +13,7 @@
 
   body {
     background-color: #ffffff;
-    color: #f1f5f3;
+    color: #1a2e22;
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
     overflow-x: hidden;
   }
@@ -24,13 +24,13 @@
   }
 }
 
-/* Luxury Gold & Emerald Effects */
+/* Page Background & Luxury Effects */
 .bg-fade-green {
-  background: linear-gradient(180deg, #083220 0%, #125437 45%, #0a3622 100%);
+  background: #ffffff;
 }
 
 .bg-fade-green-radial {
-  background: radial-gradient(circle at 50% 20%, #175d3f 0%, #0e452e 50%, #072b1a 100%);
+  background: #ffffff;
 }
 
 .bg-gold-gradient {
