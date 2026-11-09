@@ -89,8 +89,8 @@ export const EventsSection: React.FC = () => {
             <div>
               <div className="relative h-56 overflow-hidden">
                 <img
-                  src="/assets/experiences/sky_dining_candlelight.jpg"
-                  alt="Dovaan Elegant Banquet Hall"
+                  src="/assets/events/grand_banquet_hall_authentic.jpg"
+                  alt="Dovaan's Elegant Banquet Hall"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#062117] via-transparent to-transparent" />
