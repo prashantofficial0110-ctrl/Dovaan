@@ -394,7 +394,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                                 {room.tagline}
                               </p>
                               <div className="text-[11px] text-[#8ea89a] mt-1">
-                                Balcony included · {room.bedType} · {room.sizeSqFt} sq.ft
+                                Balcony included · {room.bedType}
                               </div>
                             </div>
                           </div>

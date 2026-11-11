@@ -107,16 +107,13 @@ export const StaySection: React.FC<StaySectionProps> = ({ onSelectRoomForBooking
                   Balcony &amp; River View
                 </div>
 
-                <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-white">
+                <div className="absolute bottom-3 left-3 flex items-center text-xs text-white">
                   <span className="bg-black/60 backdrop-blur-sm px-2 py-0.5 rounded text-[11px] text-[#fcedc2]">
                     {room.category === 'tower'
                       ? 'Elevated Tower'
                       : room.category === 'cottage'
                       ? 'Private Cottage'
                       : 'Riverside Glamping'}
-                  </span>
-                  <span className="bg-black/60 backdrop-blur-sm px-2 py-0.5 rounded text-[11px] text-[#d6c28f]">
-                    {room.sizeSqFt} sq.ft
                   </span>
                 </div>
               </div>
@@ -225,11 +222,7 @@ export const StaySection: React.FC<StaySectionProps> = ({ onSelectRoomForBooking
               </div>
 
               {/* Specs Bar */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-3 bg-[#03140c] rounded-xl border border-[#d4af37]/20 text-xs">
-                <div>
-                  <span className="text-[#8ea89a] block">Floor Area</span>
-                  <span className="font-semibold text-[#fcedc2]">{selectedRoom.sizeSqFt} sq.ft</span>
-                </div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 p-3 bg-[#03140c] rounded-xl border border-[#d4af37]/20 text-xs">
                 <div>
                   <span className="text-[#8ea89a] block">Bed Setup</span>
                   <span className="font-semibold text-[#fcedc2]">{selectedRoom.bedType}</span>
