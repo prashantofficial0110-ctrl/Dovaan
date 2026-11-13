@@ -97,7 +97,7 @@ export const LocationMapSection: React.FC = () => {
                         href="tel:+918370960362"
                         className="text-[#d6c28f] hover:text-white block text-xs"
                       >
-                        +91 83709 60362 / +91 78729 67822
+                        +91 83709 60362
                       </a>
                     </div>
                   </div>

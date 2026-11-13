@@ -38,7 +38,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onExploreServices, o
       id: 'dovaan-authentic-confluence',
       title: 'Dovaan Homestay and Resort at the Confluence',
       subtitle: 'Authentic daytime view of the resort property, towers, riverside terraces, and the sacred river confluence in Adampool',
-      url: '/assets/hero/dovaan_authentic_brochure_view.png',
+      url: '/assets/hero/official_property_photo_v2.jpg',
       badge: 'Official Property Photo',
       isOfficial: true,
     },

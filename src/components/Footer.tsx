@@ -233,7 +233,7 @@ export const Footer: React.FC<FooterProps> = ({
                     +91 98831 16936 (WhatsApp &amp; Booking)
                   </a>
                   <a href="tel:+918370960362" className="text-[#a3b8ad] hover:text-[#d4af37] block text-[11px]">
-                    +91 83709 60362 / +91 78729 67822
+                    +91 83709 60362
                   </a>
                 </div>
               </div>

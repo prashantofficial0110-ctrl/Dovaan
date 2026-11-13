@@ -358,7 +358,7 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
       },
       bookingType: 'stay',
       roomId: walkinRoom,
-      roomName: walkinRoom === 'room-tower-deluxe' ? 'Deluxe room with King size bed & nature views' : 'Heritage Cottage',
+      roomName: walkinRoom === 'room-tower-deluxe' ? 'Deluxe Room With Queen Size Bed & River Views' : 'Heritage Cottage',
       checkInDate: today,
       checkOutDate: tomorrow,
       nights: walkinNights,
@@ -1536,7 +1536,7 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({
                     onChange={(e) => setWalkinRoom(e.target.value)}
                     className="w-full bg-[#051c11] border border-[#d4af37]/30 rounded p-1.5 text-white text-xs"
                   >
-                    <option value="room-tower-deluxe">Deluxe Room with King Bed &amp; Nature Views</option>
+                    <option value="room-tower-deluxe">Deluxe Room With Queen Size Bed &amp; River Views</option>
                     <option value="room-tower-family">King Size Bed with Nature View</option>
                     <option value="room-luxury-cottage">Swimming Pool &amp; Sole Pole Restaurant Night View</option>
                     <option value="room-double-queen">Double Bed Queen Size Bedroom</option>
